@@ -29,12 +29,14 @@ module.exports = {
     borderWidth: {
       default: '2px',
       '0': '0',
+      '1': '1px',
       // '2': '2px',
       // '4': '4px',
     },
     extend: {
       height: {
-        banner: '680px'
+        banner: '680px',
+        menu: '20em'
       },
       colors: {
       },

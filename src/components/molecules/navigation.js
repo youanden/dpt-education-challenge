@@ -1,6 +1,7 @@
 import React, {useState} from "react"
 import Transition from "../transition"
 import ReactMegaMenu from "react-mega-menu"
+import classNames from "classnames"
 
 import "../../css/navigation.css"
 
@@ -10,7 +11,7 @@ const studentMenu = [
     key: 0,
     items: (
       <div>
-        Content
+        Content 0
       </div>
     )
   },
@@ -19,7 +20,7 @@ const studentMenu = [
     key: 1,
     items: (
       <div>
-        Content
+        Content 1
       </div>
     )
   },
@@ -28,7 +29,7 @@ const studentMenu = [
     key: 2,
     items: (
       <div>
-        Content
+        Content 2
       </div>
     )
   },
@@ -37,7 +38,7 @@ const studentMenu = [
     key: 3,
     items: (
       <div>
-        Content
+        Content 3
       </div>
     )
   },
@@ -48,22 +49,27 @@ const studentMenu = [
 const Navigation = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [isStudentMenuOpen, setIsStudentMenuOpen] = useState(false)
+  const studentMenuClass = classNames('px-4 group inline-flex items-center space-x-2 text-base leading-6 font-bold focus:outline-none transition ease-in-out duration-150', {
+    'bg-blue-800 text-white': isStudentMenuOpen,
+    'text-gray-500': !isStudentMenuOpen
+  })
+  const studentMenuCaretClass = classNames('h-5 w-5 transition ease-in-out duration-150 transform', {
+    '-rotate-180 text-white': isStudentMenuOpen,
+    'text-gray-400': !isStudentMenuOpen
+  })
   return (
     <nav className="bg-white font-body">
       <div className="container mx-auto relative z-10">
         <div className="flex justify-between h-16 relative">
           <div className="flex">
             <div className="hidden sm:ml-6 sm:flex">
-              <button type="button" className="text-gray-500 group inline-flex items-center space-x-2 text-base leading-6 font-medium hover:text-gray-900 focus:outline-none focus:text-gray-900 transition ease-in-out duration-150" onClick={() => setIsStudentMenuOpen(!isStudentMenuOpen)}>
+              <button type="button" className={studentMenuClass} onClick={() => setIsStudentMenuOpen(!isStudentMenuOpen)}>
                 <span>Students and parents</span>
                 {/* Item active: "text-gray-600", Item inactive: "text-gray-400" */}
-                <svg className="text-gray-400 h-5 w-5 group-hover:text-gray-500 group-focus:text-gray-500 transition ease-in-out duration-150" viewBox="0 0 20 20" fill="currentColor">
+                <svg className={studentMenuCaretClass} viewBox="0 0 20 20" fill="currentColor">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
                 </svg>
               </button>
-              <a href="#" className="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
-                Team
-              </a>
             </div>
           </div>
           {/*Student menu*/}
@@ -91,12 +97,25 @@ const Navigation = () => {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="absolute inset-x-0 transform shadow-lg bg-white">
+          <div className="font-body font-bold absolute inset-x-0 transform shadow-lg text-white bg-blue-800 h-menu">
             <ReactMegaMenu
-               tolerance={50}      // optional, defaults to 100
-               direction={"LEFT"}  // optional, defaults to "RIGHT", takes in "RIGHT" || "LEFT"
                styleConfig={{
-                 position: 'relative'
+                 menuProps: {
+                   className: 'py-12 ml-6 w-1/6 border-r-1 border-gray-500'
+                 },
+                 contentProps: {
+                    className: 'p-4'
+                 },
+                 menuItemProps: {
+                   className: 'p-4 hover:bg-blue-500 cursor-default'
+
+                 },
+                 menuItemSelectedProps: {
+
+                 },
+                 containerProps: {
+                   className: 'w-full'
+                 }
                }}   // defaults to an empty object. not recommended to be left blank.
                // onExit={()=>{...}}  // a function to be called when a mouse leaves the container
                data={studentMenu}        // array of data to be rendered
