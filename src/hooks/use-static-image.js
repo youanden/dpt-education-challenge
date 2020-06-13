@@ -4,7 +4,13 @@ export const useStaticImage = () => {
   const { images: { edges: nodes } } = useStaticQuery(
       graphql`
           query Query {
-              images: allImageSharp(filter: {fluid: {originalName: {glob: "*.jpg"}}}) {
+              images: allImageSharp(filter: {
+                  fluid: {
+                      originalName: {
+                          glob: "*.{jpg,png}"
+                      }
+                  }
+              }) {
                   edges {
                       node {
                           fluid(
