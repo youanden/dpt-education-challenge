@@ -330,7 +330,7 @@ const styles: any = {
   flexLEFT: css({ flexDirection: "row-reverse" }),
   flexRIGHT: css({ flexDirection: "row" }),
   menu: css({
-    position: "absolute",
+    position: "relative",
   }),
   contentSubMenu: css({
     position: `relative`,

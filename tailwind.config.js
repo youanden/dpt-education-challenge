@@ -34,7 +34,6 @@ module.exports = {
     extend: {
       height: {
         banner: "680px",
-        menu: "20em",
       },
       colors: {
         bl: {
