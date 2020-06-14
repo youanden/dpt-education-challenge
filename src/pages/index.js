@@ -29,7 +29,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="main-categories text-white">
       <motion.div
-        className="opacity-0 flex flex-wrap container mx-auto divide-x divide-white"
+        className="flex flex-wrap container mx-auto divide-x divide-white"
         variants={container}
         animate={"show"}
         initial={"hidden"}
