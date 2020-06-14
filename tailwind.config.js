@@ -41,7 +41,10 @@ module.exports = {
           default: "#004185",
           highlight: "#1F5B99",
         },
-        gr: "#DBE3E7",
+        gr: {
+          default: "#DBE3E7",
+          dark: "#2D2E2F",
+        },
       },
       spacing: {},
     },
