@@ -30,23 +30,23 @@ const StudentLoans = () => (
         </span>
       </nav>
       <div className={"flex row"}>
-        <div className={"w-4/5 pr-20"}>
-          <section className={"pb-15"}>
+        <div className={"w-4/5 pr-20 text-light-gray"}>
+          <section className={"pb-15 border-b border-dirty-white"}>
             <h1 className={"text-h1 font-bold mb-8"}>
               Student loans, forgiveness
             </h1>
-            <p>
+            <p class={"text-base"}>
               The US Department of Education provides college and university
               students with low-interest federal student loans and other aid. To
               see if you qualify for a Pell grant, direct loan, Parent PLUS
               loan, or other federal aid, follow the steps below:
             </p>
           </section>
-          <section className={"py-15"}>
+          <section className={"py-15 border-b border-dirty-white"}>
             <h2 className={"text-h2 mb-8 font-bold"}>
               Review helpful information
             </h2>
-            <p>
+            <p class={"text-base"}>
               Click the video to learn how to receive student loans, grants, and
               other federal aid.
             </p>
@@ -60,7 +60,7 @@ const StudentLoans = () => (
               Estimates of aid
             </a>
           </section>
-          <section className={"py-15 mb-15"}>
+          <section className={"py-15 mb-15 border-b border-dirty-white"}>
             <h2 className={"text-h2 mb-8 font-bold"}>
               Manage your student loans
             </h2>

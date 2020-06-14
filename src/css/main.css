@@ -8,10 +8,7 @@ body {
     @apply overflow-y-scroll;
 }
 h1, h2, h3, h4, h5, h6 {
-    @apply text-dark-gray font-display;
-}
-p, span, div {
-    @apply text-light-gray text-base;
+    @apply font-display;
 }
 .btn {
 

@@ -1,7 +1,4 @@
 main {
-    section {
-        @apply border-b border-dirty-white;
-    }
     .in-this-section {
         .group {
             @apply block relative border-b border-dirty-white;
