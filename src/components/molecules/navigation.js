@@ -209,7 +209,7 @@ const teacherMenu = [
     label: "Administrators",
     key: 1,
     items: (
-      <ul class={ulClass}>
+      <ul className={ulClass}>
         <li>
           <a href="#" className={anchorClass}>
             Research and statistics
@@ -596,6 +596,26 @@ const Navigation = () => {
                       <div className={classNames({ hidden: !item.isOpen })}>
                         <div className="mt-16 font-body font-bold absolute inset-x-0 transform shadow-lg text-white bg-bl">
                           <ReactMegaMenu
+                            onExit={activeLabel => {
+                              const openMenus = Object.values(nav).filter(
+                                i => i.isOpen
+                              )
+                              const hasOpenMenu = openMenus.length
+                              if (!hasOpenMenu) return
+                              const eventMatchesActiveMegaMenu =
+                                openMenus[0]["label"] === activeLabel
+                              // Menu that is open must match the id of the current firing event
+                              if (!eventMatchesActiveMegaMenu) return
+                              setNav(prevNav =>
+                                prevNav.map(i => ({ ...i, isOpen: false }))
+                              )
+                              document
+                                .querySelector(
+                                  `[aria-controls='megamenu-${index}']`
+                                )
+                                .focus()
+                            }}
+                            label={item.label}
                             styleConfig={{
                               contentProps: {
                                 className: "font-medium",
@@ -630,6 +650,8 @@ const Navigation = () => {
                               ),
                               menuItemSelectedProps: {
                                 "aria-selected": true,
+                                className:
+                                  "p-4 bg-bl-highlight cursor-default relative group",
                               },
                               containerProps: {
                                 className: "w-full border-t-1 border-gray-500",

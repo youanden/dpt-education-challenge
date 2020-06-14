@@ -23,6 +23,7 @@ type Props = {
   data: Section[]
   styleConfig: StyleConfig
   onExit?: () => void
+  label?: string
 }
 type State = {
   // your states
@@ -81,7 +82,7 @@ export function MenuItem({
       {...props}
       {...{
         "aria-controls": contentPropId + index,
-        tabIndex: activeRow >= 0 ? (selected ? 0 : -1) : 0,
+        // tabIndex: activeRow >= 0 ? (selected ? 0 : -1) : 0,
       }}
       {...(selected ? selectedProps : {})}
     >
@@ -90,34 +91,88 @@ export function MenuItem({
   )
 }
 
-function upHandler(e) {
-  const { key } = e
-  if (this.state.activeRow > 0) {
-    if (key === "ArrowUp") {
-      e.preventDefault()
-      this.instance.current
-        .querySelector("[aria-selected=true]")
-        .previousElementSibling.focus()
-      // this.setState({
-      //   activeRow: this.state.activeRow - 1,
-      // })
+function keyHandler(e) {
+  const { key, shiftKey } = e
+  const totalItems = this.props.data.length
+  const $el = this.instance.current.querySelector("[aria-selected=true]")
+  const inRootMenuContext = $el === document.activeElement
+  const navIsOpen = document.querySelector("nav [aria-expanded=true]")
+  if (!navIsOpen) return
+  const contentPanel = document.querySelector("nav [role=tabpanel]")
+  const focusableSelector =
+    'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+  // In contentPanel
+  if (contentPanel && contentPanel.contains(document.activeElement) && $el) {
+    if (
+      (shiftKey && key === "Tab") ||
+      key === "ArrowLeft" ||
+      key === "Escape"
+    ) {
+      return $el.focus()
+    }
+    // Find elements of a similar type to active
+    // Find all such elements in container
+    // Seek to the next element in the index after finding currently selected element
+    const focusableElementsInContentPanel = contentPanel.querySelectorAll(
+      focusableSelector
+    )
+
+    let currentElementIndex = -1
+    focusableElementsInContentPanel.forEach((el, index) => {
+      if (el === document.activeElement) {
+        currentElementIndex = index
+      }
+    })
+
+    switch (key) {
+      case "ArrowUp":
+        const previousElement =
+          focusableElementsInContentPanel[currentElementIndex - 1]
+        return previousElement && previousElement.focus()
+      case "ArrowDown":
+        const nextElement =
+          focusableElementsInContentPanel[currentElementIndex + 1]
+        return nextElement && nextElement.focus()
+      default:
+        break
+    }
+
+    return
+  }
+  // shiftKey + Tab // ArrowLeft // Escape
+  if (key === "Tab" && inRootMenuContext) {
+    e.preventDefault()
+    let nextFocusElement = shiftKey
+      ? $el.previousElementSibling
+      : $el.nextElementSibling
+    if (nextFocusElement) return nextFocusElement.focus()
+  }
+  if (/Enter|ArrowRight/.test(key) && inRootMenuContext) {
+    const contentPanel = this.instance.current.nextElementSibling
+    if (contentPanel) {
+      const firstFocusableElement = contentPanel.querySelector(
+        focusableSelector
+      )
+      firstFocusableElement.focus()
     }
   }
-}
 
-function downHandler(e) {
-  const { key } = e
-  const totalItems = this.props.data.length
-  if (this.state.activeRow >= 0 && this.state.activeRow < totalItems - 1) {
-    if (key === "ArrowDown") {
-      e.preventDefault()
-      this.instance.current
-        .querySelector("[aria-selected=true]")
-        .nextElementSibling.focus()
-      // this.setState({
-      //   activeRow: this.state.activeRow + 1,
-      // })
-    }
+  if (key === "Escape") {
+    return (
+      typeof this.props.onExit === "function" &&
+      this.props.onExit(this.props.label)
+    )
+  }
+  if (/ArrowUp|ArrowDown/.test(key)) e.preventDefault()
+  if (this.state.activeRow > 0 && key === "ArrowUp" && inRootMenuContext) {
+    $el.previousElementSibling.focus()
+  }
+  if (
+    this.state.activeRow < totalItems - 1 &&
+    key === "ArrowDown" &&
+    inRootMenuContext
+  ) {
+    $el.nextElementSibling.focus()
   }
 }
 
@@ -139,14 +194,12 @@ export class ReactMegaMenu extends React.Component<Props, State> {
   instance = React.createRef<HTMLUListElement>()
 
   componentDidMount() {
-    window.addEventListener("keydown", downHandler.bind(this))
-    window.addEventListener("keyup", upHandler.bind(this))
+    window.addEventListener("keydown", keyHandler.bind(this))
     // Remove event listeners on cleanup
   }
 
   componentWillUnmount() {
-    window.removeEventListener("keydown", downHandler.bind(this))
-    window.removeEventListener("keyup", upHandler.bind(this))
+    window.removeEventListener("keydown", keyHandler.bind(this))
   }
 
   mouseLeave = () => {
