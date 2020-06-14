@@ -5,7 +5,7 @@ import Navigation from "./navigation"
 import { useStaticImage } from "../../hooks/use-static-image"
 import Img from "gatsby-image"
 
-const Footer = ({ siteTitle }) => {
+const Footer = () => {
   const images = useStaticImage()
   const logo = images["logo_inverted.png"]
 
