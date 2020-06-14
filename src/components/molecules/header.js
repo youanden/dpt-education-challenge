@@ -13,8 +13,12 @@ const Header = ({ siteTitle }) => {
   const logoSmall = images["edtiny.png"]
   const logo = images["logo.png"]
   const usflag = images["usflag.png"]
+  const siteNcesKids = images["site_nces_kids.png"]
+  const siteEric = images["site_eric.png"]
+  const siteSchoolSafety = images["site_school_safety.png"]
+  const siteDapip = images["site_dapip.png"]
   const [isMultisitePanelOpen, setMultisitePanelOpen] = useState(false)
-  const [isAuthorityPanelOpen, setIsAuthorityPanelOpen] = useState(false)
+  const [isAuthorityPanelOpen, setAuthorityPanelOpen] = useState(false)
   const [isLanguageMenuOpen, setLanguageMenuOpen] = useState(false)
 
   return (
@@ -29,7 +33,7 @@ const Header = ({ siteTitle }) => {
             onClick={() => setMultisitePanelOpen(!isMultisitePanelOpen)}
           >
             <img
-              className={"inline mr-2"}
+              className={"inline -mt-1 mr-2"}
               src={logoSmall.src}
               alt="U.S. Department of Education Logo - Site Switcher"
             />
@@ -58,7 +62,9 @@ const Header = ({ siteTitle }) => {
             <span>An official website of the United States government</span>
             <button
               className="ml-4"
-              onClick={() => setIsAuthorityPanelOpen(!isAuthorityPanelOpen)}
+              onClick={() => setAuthorityPanelOpen(!isAuthorityPanelOpen)}
+              aria-expanded={isAuthorityPanelOpen}
+              aria-controls={"gov-banner"}
             >
               <span>Here's how you know</span>
               <svg
@@ -148,6 +154,56 @@ const Header = ({ siteTitle }) => {
           <div className="w-full"></div>
         </div>
         <div
+          className={["bg-bl", isMultisitePanelOpen ? "" : "hidden"].join(" ")}
+          id="multisite-banner"
+          aria-hidden={!isMultisitePanelOpen}
+        >
+          <div className="container py-8 font-display font-bold text-md">
+            <ul className={"flex"}>
+              <li className={"mr-12"}>
+                <a href="#" className={"text-white"}>
+                  <img
+                    className={"inline mr-2"}
+                    src={siteNcesKids.src}
+                    alt="NCES Kid's Zone"
+                  />
+                  <span>NCES Kid's Zone</span>
+                </a>
+              </li>
+              <li className={"mr-12"}>
+                <a href="#" className={"text-white"}>
+                  <img
+                    className={"inline mr-2"}
+                    src={siteEric.src}
+                    alt="ERIC"
+                  />
+                  <span>ERIC</span>
+                </a>
+              </li>
+              <li className={"mr-12"}>
+                <a href="#" className={"text-white"}>
+                  <img
+                    className={"inline mr-2"}
+                    src={siteSchoolSafety.src}
+                    alt="SchoolSafety.gov"
+                  />
+                  <span>SchoolSafety.gov</span>
+                </a>
+              </li>
+              <li className={"mr-12"}>
+                <a href="#" className={"text-white"}>
+                  <img
+                    className={"inline mr-2"}
+                    src={siteDapip.src}
+                    alt="DAPIP"
+                  />
+                  <span>DAPIP</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
           className={["bg-gray-100", isAuthorityPanelOpen ? "" : "hidden"].join(
             " "
           )}
@@ -187,6 +243,7 @@ const Header = ({ siteTitle }) => {
             </div>
           </div>
         </div>
+
         <div className="bg-white h-32 flex items-center">
           <div className="container flex">
             <Link to="/" className="w-1/3">
