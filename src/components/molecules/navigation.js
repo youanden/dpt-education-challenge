@@ -545,12 +545,12 @@ const Navigation = () => {
             <div className="hidden sm:flex">
               {nav.map((item, index) => {
                 return (
-                  <>
+                  <div className={"flex"} key={index}>
                     <button
                       key={item.label}
                       type="button"
                       className={[
-                        "px-4 group inline-flex items-center space-x-2 text-base leading-6 font-bold cursor-pointer focus:outline-none focus:border-blue-300 focus:shadow-outline-blue",
+                        "px-4 group space-x-2 inline-flex items-center text-base leading-6 font-bold cursor-pointer focus:outline-none focus:border-blue-300 focus:shadow-outline-blue",
                         item.isOpen ? "bg-bl text-white" : "text-gray-500",
                       ].join(" ")}
                       onClick={() => {
@@ -665,7 +665,7 @@ const Navigation = () => {
                         </div>
                       </div>
                     ) : null}
-                  </>
+                  </div>
                 )
               })}
             </div>
