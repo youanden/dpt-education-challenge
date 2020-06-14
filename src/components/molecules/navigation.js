@@ -539,7 +539,7 @@ const Navigation = () => {
   const [nav, setNav] = useState(menu)
   const isMenuOpen = Object.values(nav).some(v => v.isOpen)
   return (
-    <nav className="bg-white font-body">
+    <nav className="bg-white font-body border-t-1 border-b-1 border-gr">
       <div className="container mx-auto relative z-10">
         <div className="flex justify-between h-16 relative">
           <div className="flex">

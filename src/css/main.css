@@ -4,6 +4,9 @@
 
 @tailwind utilities;
 
+body {
+    @apply overflow-y-scroll;
+}
 .btn {
 
 }

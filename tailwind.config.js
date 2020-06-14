@@ -11,7 +11,8 @@ module.exports = {
       sm: "640px",
       md: "768px",
       lg: "1024px",
-      xl: "1680px",
+      xl: "1280px",
+      xxl: "1680px",
     },
     fontFamily: {
       display: ["Merriweather", "sans-serif"],
@@ -40,6 +41,7 @@ module.exports = {
           default: "#004185",
           highlight: "#1F5B99",
         },
+        gr: "#DBE3E7",
       },
       spacing: {},
     },
