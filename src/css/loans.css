@@ -1,7 +1,7 @@
 main {
     .in-this-section {
         .group {
-            @apply block relative border-b border-dirty-white;
+            @apply block relative border-b border-gr-lighter;
         }
         .group::after {
             content: ' ';
@@ -11,7 +11,7 @@ main {
             bottom: 2px;
             border-top-left-radius: 25%;
             border-bottom-left-radius: 25%;
-            @apply absolute hidden bg-deep-blue;
+            @apply absolute hidden bg-bl;
         }
         .group:hover::after, .group.active::after {
             @apply block;

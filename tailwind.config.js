@@ -49,14 +49,12 @@ module.exports = {
         gr: {
           default: "#DBE3E7",
           dark: "#2D2E2F",
+          light: "#565c65",
+          lighter: "#DBE3E7",
         },
-        transparent: "transparent",
-        "dark-gray": "#2d2e2f",
-        "light-gray": "#565c65",
-        "dirty-white": "#DBE3E7",
         green: "#2d8700",
-        "deep-blue": "#004285",
-        "light-blue": "#ebf3f7",
+        // Might as well be gr-default it's unnoticeably blue
+        // "light-blue": "#ebf3f7",
       },
       spacing: {},
     },
