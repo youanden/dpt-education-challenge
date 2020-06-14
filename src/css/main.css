@@ -7,15 +7,11 @@
 body {
     @apply overflow-y-scroll;
 }
-
-main {
-    h1, h2, h3, h4, h5, h6 {
-        @apply text-dark-gray;
-    }
-
-    p, span, div {
-        @apply text-light-gray text-base;
-    }
+h1, h2, h3, h4, h5, h6 {
+    @apply text-dark-gray font-display;
+}
+p, span, div {
+    @apply text-light-gray text-base;
 }
 .btn {
 

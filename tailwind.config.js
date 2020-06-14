@@ -24,7 +24,11 @@ module.exports = {
       base: ["18px", "24px"],
       md: ["20px", "32px"],
       lg: ["26px", "34px"],
-      h1: ['40px', '30px']
+      h1: ["40px", "30px"],
+      h2: ["24px", "32px"],
+      h3: ["17px", "24px"],
+      h5: ["14px", "30px"],
+      link: ["17px", "30px"]
     },
     borderWidth: {
       default: "2px",
@@ -41,6 +45,7 @@ module.exports = {
         transparent: 'transparent',
         'dark-gray': '#2d2e2f',
         'light-gray': '#565c65',
+        'dirty-white': '#DBE3E7',
         green: '#2d8700',
         'deep-blue': '#004285',
         'light-blue': '#ebf3f7',
