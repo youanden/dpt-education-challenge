@@ -8,14 +8,14 @@
 
 }
 .btn-ghost {
-    @apply inline-flex items-center px-6 py-2 border border-gray-400 text-gray-400 text-base leading-6 font-medium rounded-md transition ease-in-out duration-150;
+    @apply inline-flex items-center px-6 py-2 border border-white text-white text-base leading-6 font-medium rounded-md transition ease-in-out duration-150;
 }
 .btn-ghost:hover,
 .btn-ghost:active,
 .btn-ghost:focus {
-    @apply text-white border-white;
+    @apply bg-white text-black border-white;
 }
 
 .btn-ghost:focus {
-    @apply outline-none border-blue-300;
+    @apply bg-white text-black outline-none border-blue-300;
 }
