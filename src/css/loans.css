@@ -1,7 +1,12 @@
 main {
+    .number-cirle {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
     .in-this-section {
         .group {
-            @apply block relative border-b border-gr-lighter;
+            @apply block relative border-b-1 border-gr-lighter;
         }
         .group::after {
             content: ' ';
@@ -12,6 +17,9 @@ main {
             border-top-left-radius: 25%;
             border-bottom-left-radius: 25%;
             @apply absolute hidden bg-bl;
+        }
+        .group.active {
+            @apply font-bold;
         }
         .group:hover::after, .group.active::after {
             @apply block;

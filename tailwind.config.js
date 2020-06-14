@@ -27,6 +27,7 @@ module.exports = {
       h1: ["40px", "30px"],
       h2: ["24px", "32px"],
       h3: ["17px", "24px"],
+      h4: ["16px", "20px"],
       h5: ["14px", "30px"],
       link: ["17px", "30px"],
     },
