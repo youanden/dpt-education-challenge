@@ -551,7 +551,7 @@ const Navigation = () => {
                       key={item.label}
                       type="button"
                       className={[
-                        "px-4 group inline-flex items-center space-x-2 text-base leading-6 font-bold cursor-pointer",
+                        "px-4 group inline-flex items-center space-x-2 text-base leading-6 font-bold cursor-pointer focus:outline-none focus:border-blue-300 focus:shadow-outline-blue",
                         item.isOpen ? "bg-bl text-white" : "text-gray-500",
                       ].join(" ")}
                       onClick={() => {
@@ -567,8 +567,8 @@ const Navigation = () => {
                           ]
                         })
                       }}
-                      /* make sure to change tabindex when going into mega menu */
-                      // tabindex={item.isOpen ? 0 : isMenuOpen ? -1 : 0}
+                      /* make sure to change tabIndex when going into mega menu */
+                      // tabIndex={item.isOpen ? 0 : isMenuOpen ? -1 : 0}
                       aria-controls={`megamenu-${index}`}
                       aria-expanded={item.isOpen}
                     >
@@ -614,7 +614,7 @@ const Navigation = () => {
                                 "aria-selected": false,
                                 role: "tab",
                                 "aria-controls": `megamenu-content-${index}`,
-                                tabindex: 0,
+                                tabIndex: 0,
                               },
                               menuItemAfter: (
                                 <svg
@@ -649,7 +649,6 @@ const Navigation = () => {
               })}
             </div>
           </div>
-          {/*Student menu*/}
           <div className="-mr-2 flex items-center sm:hidden">
             {/* Mobile menu button */}
             <button
@@ -713,7 +712,7 @@ const Navigation = () => {
                       "aria-selected": false,
                       role: "tab",
                       "aria-controls": `megamenu-content-${index}`,
-                      tabindex: 0,
+                      tabIndex: 0,
                     },
                     menuItemSelectedProps: {
                       "aria-selected": true,
