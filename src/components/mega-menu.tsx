@@ -92,87 +92,91 @@ export function MenuItem({
 }
 
 function keyHandler(e) {
-  const { key, shiftKey } = e
-  const totalItems = this.props.data.length
-  const $el = this.instance.current.querySelector("[aria-selected=true]")
-  const inRootMenuContext = $el === document.activeElement
-  const navIsOpen = document.querySelector("nav [aria-expanded=true]")
-  if (!navIsOpen) return
-  const contentPanel = document.querySelector("nav [role=tabpanel]")
-  const focusableSelector =
-    'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
-  // In contentPanel
-  if (contentPanel && contentPanel.contains(document.activeElement) && $el) {
-    if (
-      (shiftKey && key === "Tab") ||
-      key === "ArrowLeft" ||
-      key === "Escape"
-    ) {
-      return $el.focus()
-    }
-    // Find elements of a similar type to active
-    // Find all such elements in container
-    // Seek to the next element in the index after finding currently selected element
-    const focusableElementsInContentPanel = contentPanel.querySelectorAll(
-      focusableSelector
-    )
-
-    let currentElementIndex = -1
-    focusableElementsInContentPanel.forEach((el, index) => {
-      if (el === document.activeElement) {
-        currentElementIndex = index
+  try {
+    const { key, shiftKey } = e
+    const totalItems = this.props.data.length
+    const $el = this.instance.current.querySelector("[aria-selected=true]")
+    const inRootMenuContext = $el === document.activeElement
+    const navIsOpen = document.querySelector("nav [aria-expanded=true]")
+    if (!navIsOpen) return
+    const contentPanel = document.querySelector("nav [role=tabpanel]")
+    const focusableSelector =
+      'button, a, input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    // In contentPanel
+    if (contentPanel && contentPanel.contains(document.activeElement) && $el) {
+      if (
+        (shiftKey && key === "Tab") ||
+        key === "ArrowLeft" ||
+        key === "Escape"
+      ) {
+        return $el.focus()
       }
-    })
-
-    switch (key) {
-      case "ArrowUp":
-        const previousElement =
-          focusableElementsInContentPanel[currentElementIndex - 1]
-        return previousElement && previousElement.focus()
-      case "ArrowDown":
-        const nextElement =
-          focusableElementsInContentPanel[currentElementIndex + 1]
-        return nextElement && nextElement.focus()
-      default:
-        break
-    }
-
-    return
-  }
-  // shiftKey + Tab // ArrowLeft // Escape
-  if (key === "Tab" && inRootMenuContext) {
-    e.preventDefault()
-    let nextFocusElement = shiftKey
-      ? $el.previousElementSibling
-      : $el.nextElementSibling
-    if (nextFocusElement) return nextFocusElement.focus()
-  }
-  if (/Enter|ArrowRight/.test(key) && inRootMenuContext) {
-    const contentPanel = this.instance.current.nextElementSibling
-    if (contentPanel) {
-      const firstFocusableElement = contentPanel.querySelector(
+      // Find elements of a similar type to active
+      // Find all such elements in container
+      // Seek to the next element in the index after finding currently selected element
+      const focusableElementsInContentPanel = contentPanel.querySelectorAll(
         focusableSelector
       )
-      firstFocusableElement.focus()
-    }
-  }
 
-  if (key === "Escape") {
-    return (
-      typeof this.props.onExit === "function" &&
-      this.props.onExit(this.props.label)
-    )
-  }
-  if (/ArrowUp|ArrowDown/.test(key)) e.preventDefault()
-  if (this.state.activeRow > 0 && key === "ArrowUp" && inRootMenuContext) {
-    $el.previousElementSibling.focus()
-  }
-  if (
-    this.state.activeRow < totalItems - 1 &&
-    key === "ArrowDown" &&
-    inRootMenuContext
-  ) {
-    $el.nextElementSibling.focus()
+      let currentElementIndex = -1
+      focusableElementsInContentPanel.forEach((el, index) => {
+        if (el === document.activeElement) {
+          currentElementIndex = index
+        }
+      })
+
+      switch (key) {
+        case "ArrowUp":
+          const previousElement =
+            focusableElementsInContentPanel[currentElementIndex - 1]
+          return previousElement && previousElement.focus()
+        case "ArrowDown":
+          const nextElement =
+            focusableElementsInContentPanel[currentElementIndex + 1]
+          return nextElement && nextElement.focus()
+        default:
+          break
+      }
+
+      return
+    }
+    // shiftKey + Tab // ArrowLeft // Escape
+    if (key === "Tab" && inRootMenuContext) {
+      e.preventDefault()
+      let nextFocusElement = shiftKey
+        ? $el.previousElementSibling
+        : $el.nextElementSibling
+      if (nextFocusElement) return nextFocusElement.focus()
+    }
+    if (/Enter|ArrowRight/.test(key) && inRootMenuContext) {
+      const contentPanel = this.instance.current.nextElementSibling
+      if (contentPanel) {
+        const firstFocusableElement = contentPanel.querySelector(
+          focusableSelector
+        )
+        firstFocusableElement.focus()
+      }
+    }
+
+    if (key === "Escape") {
+      return (
+        typeof this.props.onExit === "function" &&
+        this.props.onExit(this.props.label)
+      )
+    }
+    if (/ArrowUp|ArrowDown/.test(key)) e.preventDefault()
+    if (this.state.activeRow > 0 && key === "ArrowUp" && inRootMenuContext) {
+      $el.previousElementSibling.focus()
+    }
+    if (
+      this.state.activeRow < totalItems - 1 &&
+      key === "ArrowDown" &&
+      inRootMenuContext
+    ) {
+      $el.nextElementSibling.focus()
+    }
+  } catch (e) {
+    // Failed for some reason - could be mouse + keyboard event combination
   }
 }
 
