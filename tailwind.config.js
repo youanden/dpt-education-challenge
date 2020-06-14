@@ -28,7 +28,7 @@ module.exports = {
       h2: ["24px", "32px"],
       h3: ["17px", "24px"],
       h5: ["14px", "30px"],
-      link: ["17px", "30px"]
+      link: ["17px", "30px"],
     },
     borderWidth: {
       default: "2px",
@@ -42,13 +42,6 @@ module.exports = {
         banner: "680px",
       },
       colors: {
-        transparent: 'transparent',
-        'dark-gray': '#2d2e2f',
-        'light-gray': '#565c65',
-        'dirty-white': '#DBE3E7',
-        green: '#2d8700',
-        'deep-blue': '#004285',
-        'light-blue': '#ebf3f7',
         bl: {
           default: "#004185",
           highlight: "#1F5B99",
@@ -57,11 +50,15 @@ module.exports = {
           default: "#DBE3E7",
           dark: "#2D2E2F",
         },
+        transparent: "transparent",
+        "dark-gray": "#2d2e2f",
+        "light-gray": "#565c65",
+        green: "#2d8700",
+        "deep-blue": "#004285",
+        "light-blue": "#ebf3f7",
       },
       spacing: {},
     },
   },
-  plugins: [
-    require('@tailwindcss/ui'),
-  ]
+  plugins: [require("@tailwindcss/ui")],
 }

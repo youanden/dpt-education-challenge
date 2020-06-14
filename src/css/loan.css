@@ -1,0 +1,5 @@
+main {
+    section {
+        @apply border-b border-light-gray
+    }
+}
