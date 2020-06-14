@@ -1,16 +1,39 @@
 import React from "react"
-import {Link} from "gatsby"
-
+import { Link } from "gatsby"
+import { motion } from "framer-motion"
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import ATallContent from "../components/atoms/a-tall-content";
+import ATallContent from "../components/atoms/a-tall-content"
+
+const container = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+  show: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+}
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home"/>
+    <SEO title="Home" />
     <section className="main-categories text-white">
-      <div className="flex flex-wrap h-64 container mx-auto divide-x divide-white">
+      <motion.div
+        className="opacity-0 flex flex-wrap container mx-auto divide-x divide-white"
+        variants={container}
+        animate={"show"}
+        initial={"hidden"}
+      >
         <ATallContent
           image={`student_loans.jpg`}
           heading={`Student loans`}
@@ -40,7 +63,7 @@ const IndexPage = () => (
           link={`/a`}
           cta={`Explore`}
         />
-      </div>
+      </motion.div>
     </section>
   </Layout>
 )
