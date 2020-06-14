@@ -24,7 +24,8 @@ module.exports = {
       sm: ['14px', '20px'],
       base: ['18px', '24px'],
       md: ['20px', '32px'],
-      lg: ['26px', '34px']
+      lg: ['26px', '34px'],
+      h1: ['40px', '30px']
     },
     borderWidth: {
       default: '2px',
@@ -37,6 +38,12 @@ module.exports = {
         banner: '680px'
       },
       colors: {
+        transparent: 'transparent',
+        'dark-gray': '#2d2e2f',
+        'light-gray': '#565c65',
+        green: '#2d8700',
+        'deep-blue': '#004285',
+        'light-blue': '#ebf3f7'
       },
       spacing: {
       }
