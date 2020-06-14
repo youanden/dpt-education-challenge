@@ -537,7 +537,6 @@ const menu = [
 const Navigation = () => {
   const [isMobileOpen, setIsMobileOpen] = useState(false)
   const [nav, setNav] = useState(menu)
-  const isMenuOpen = Object.values(nav).some(v => v.isOpen)
   return (
     <nav className="bg-white font-body border-t-1 border-b-1 border-gr">
       <div className="container mx-auto relative z-10">
@@ -613,7 +612,7 @@ const Navigation = () => {
                                   "p-4 hover:bg-bl-highlight cursor-default relative group",
                                 "aria-selected": false,
                                 role: "tab",
-                                "aria-controls": `megamenu-content-${index}`,
+                                "aria-controls": `megamenu-content-`,
                                 tabIndex: 0,
                               },
                               menuItemAfter: (
@@ -704,7 +703,7 @@ const Navigation = () => {
                     },
                     contentProps: {
                       className: "",
-                      id: `megamenu-content-${index}`,
+                      id: `megamenu-content-`,
                       role: "tabpanel",
                     },
                     menuItemProps: {
@@ -712,7 +711,6 @@ const Navigation = () => {
                       "aria-selected": false,
                       role: "tab",
                       "aria-controls": `megamenu-content-${index}`,
-                      tabIndex: 0,
                     },
                     menuItemSelectedProps: {
                       "aria-selected": true,

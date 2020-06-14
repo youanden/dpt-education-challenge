@@ -33,6 +33,10 @@ type State = {
 }
 
 type menuItemProps = {
+  index?: number
+  activeRow?: number
+  menuActive?: boolean
+  contentPropId?: string
   props?: React.HTMLAttributes<HTMLLIElement>
   selectedProps?: React.HTMLAttributes<HTMLLIElement>
   hasData?: boolean
@@ -62,20 +66,59 @@ export function MenuItem({
   label,
   mouseEntered,
   hasData,
+  activeRow,
+  menuActive,
+  index,
   props,
+  contentPropId,
   selectedProps,
   menuItemAfter,
 }: menuItemProps) {
   return (
     <li
-      {...(selected ? selectedProps : {})}
       onMouseEnter={mouseEntered}
       onFocus={mouseEntered}
       {...props}
+      {...{
+        "aria-controls": contentPropId + index,
+        tabIndex: activeRow >= 0 ? (selected ? 0 : -1) : 0,
+      }}
+      {...(selected ? selectedProps : {})}
     >
       {label} {menuItemAfter || null}
     </li>
   )
+}
+
+function upHandler(e) {
+  const { key } = e
+  if (this.state.activeRow > 0) {
+    if (key === "ArrowUp") {
+      e.preventDefault()
+      this.instance.current
+        .querySelector("[aria-selected=true]")
+        .previousElementSibling.focus()
+      // this.setState({
+      //   activeRow: this.state.activeRow - 1,
+      // })
+    }
+  }
+}
+
+function downHandler(e) {
+  const { key } = e
+  const totalItems = this.props.data.length
+  if (this.state.activeRow >= 0 && this.state.activeRow < totalItems - 1) {
+    if (key === "ArrowDown") {
+      e.preventDefault()
+      this.instance.current
+        .querySelector("[aria-selected=true]")
+        .nextElementSibling.focus()
+      // this.setState({
+      //   activeRow: this.state.activeRow + 1,
+      // })
+    }
+  }
 }
 
 /**
@@ -94,6 +137,17 @@ export class ReactMegaMenu extends React.Component<Props, State> {
   state: State = { activeRow: -1, mouseLocs: [] }
 
   instance = React.createRef<HTMLUListElement>()
+
+  componentDidMount() {
+    window.addEventListener("keydown", downHandler.bind(this))
+    window.addEventListener("keyup", upHandler.bind(this))
+    // Remove event listeners on cleanup
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener("keydown", downHandler.bind(this))
+    window.removeEventListener("keyup", upHandler.bind(this))
+  }
 
   mouseLeave = () => {
     this.dismissTimeout()
@@ -295,6 +349,10 @@ export class ReactMegaMenu extends React.Component<Props, State> {
           {data.map(({ label, key, items }, i) => (
             <MenuItem
               selectedProps={menuItemSelectedProps}
+              index={i}
+              activeRow={activeRow}
+              menuActive={!containerProps["aria-hidden"]}
+              contentPropId={contentProps.id}
               props={menuItemProps}
               selected={i === activeRow}
               hasData={items !== undefined}
@@ -308,6 +366,9 @@ export class ReactMegaMenu extends React.Component<Props, State> {
         {activeRow > -1 && data[activeRow].items && (
           <div
             {...contentProps}
+            {...{
+              id: contentProps.id + activeRow,
+            }}
             onMouseEnter={this.enterSubMenu}
             className={`${(contentProps && contentProps.className) || ""} ${
               styles.contentSubMenu
