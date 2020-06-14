@@ -10,6 +10,13 @@ body {
 h1, h2, h3, h4, h5, h6 {
     @apply font-display;
 }
+
+button:focus,
+:focus {
+    @apply border-blue-300 shadow-outline-blue;
+    outline: 0;
+}
+
 .btn {
 
 }
@@ -23,5 +30,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-ghost:focus {
-    @apply bg-white text-black outline-none border-blue-300;
+    @apply bg-white text-black;
 }

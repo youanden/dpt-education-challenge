@@ -59,5 +59,8 @@ module.exports = {
       spacing: {},
     },
   },
+  corePlugins: {
+    outline: false,
+  },
   plugins: [require("@tailwindcss/ui")],
 }
