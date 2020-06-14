@@ -8,6 +8,7 @@ import Img from "gatsby-image"
 import Transition from "../transition"
 import building from "../../images/building.svg"
 import lock from "../../images/lock.svg"
+import MobileNavigation from "./mobile-navigation"
 
 const Header = ({ siteTitle }) => {
   const images = useStaticImage()
@@ -24,11 +25,11 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="w-full bg-white">
-      <section className="bg-gray-100">
+      <section className="bg-bl-lightest">
         <div className="container flex flex-wrap">
           <button
             className={[
-              "w-32 py-2 mr-4",
+              "w-32 py-2 md:pl-2 hidden md:block",
               isMultisitePanelOpen ? "bg-bl text-white" : "bg-white",
             ].join(" ")}
             onClick={() => setMultisitePanelOpen(!isMultisitePanelOpen)}
@@ -54,7 +55,7 @@ const Header = ({ siteTitle }) => {
               />
             </svg>
           </button>
-          <div className="inline py-2">
+          <div className="inline py-2 pl-4 max-w-md lg:max-w-max-content">
             <img
               className={"inline mr-2 relative -mt-1"}
               src={usflag.src}
@@ -62,7 +63,7 @@ const Header = ({ siteTitle }) => {
             />
             <span>An official website of the United States government</span>
             <button
-              className="ml-4"
+              className="ml-4 text-bl-link"
               onClick={() => setAuthorityPanelOpen(!isAuthorityPanelOpen)}
               aria-expanded={isAuthorityPanelOpen}
               aria-controls={"gov-banner"}
@@ -71,7 +72,7 @@ const Header = ({ siteTitle }) => {
               <svg
                 className={[
                   "inline ml-2 h-5 w-5 transition ease-in-out duration-150 transform",
-                  isAuthorityPanelOpen ? "-rotate-180" : "text-gray-400",
+                  isAuthorityPanelOpen ? "-rotate-180" : "",
                 ].join(" ")}
                 viewBox="0 0 20 20"
                 fill="currentColor"
@@ -84,7 +85,7 @@ const Header = ({ siteTitle }) => {
               </svg>
             </button>
           </div>
-          <div className="flex-1 text-right relative py-2">
+          <div className="flex-1 text-right relative py-2 hidden md:flex justify-end items-center">
             <a href="#">Sitemap (A-Z)</a>
             <button
               id="language-menu"
@@ -152,7 +153,6 @@ const Header = ({ siteTitle }) => {
               </div>
             </Transition>
           </div>
-          <div className="w-full"></div>
         </div>
         <div
           className={["bg-bl", isMultisitePanelOpen ? "" : "hidden"].join(" ")}
@@ -211,11 +211,11 @@ const Header = ({ siteTitle }) => {
           id="gov-banner"
           aria-hidden={!isAuthorityPanelOpen}
         >
-          <div className="container flex py-4">
-            <div className="w-1/2 items-center flex">
+          <div className="container flex flex-wrap p-4">
+            <div className="w-full md:w-1/2 items-center flex max-w-xl">
               <svg
                 viewBox={building.viewBox}
-                className={"w-24 m-4 text-black float-left"}
+                className={"w-1/3 xl:w-24 hidden sm:block sm:m-4 xl:m-4"}
               >
                 <use xlinkHref={`#${building.id}`} />
               </svg>
@@ -227,10 +227,10 @@ const Header = ({ siteTitle }) => {
                 government site.
               </p>
             </div>
-            <div className="w-1/2 items-center flex">
+            <div className="w-full mt-4 md:mt-0 md:w-1/2 items-center flex max-w-xl">
               <svg
                 viewBox={lock.viewBox}
-                className={"w-24 m-4 text-black float-left"}
+                className={"w-1/3 xl:w-24 hidden sm:block sm:m-4 xl:m-4"}
               >
                 <use xlinkHref={`#${lock.id}`} />
               </svg>
@@ -245,14 +245,15 @@ const Header = ({ siteTitle }) => {
           </div>
         </div>
 
-        <div className="bg-white h-32 flex items-center">
-          <div className="container flex">
-            <Link to="/" className="w-1/3">
+        <div className="bg-white h-32 flex items-center p-4 md:p-0 justify-end">
+          <div className="container flex justify-between">
+            <Link to="/" className="w-2/3 md:w-1/3">
               <img src={logo.src} alt={"U.S. Department of Education Logo"} />
             </Link>
-            <div className="w-2/3 flex-1 flex items-center justify-center lg:ml-6 lg:justify-end">
+            <div className="hidden sm:flex w-2/3 md:w-2/5 items-center justify-center lg:ml-6 lg:justify-end">
               <Search />
             </div>
+            <MobileNavigation />
           </div>
         </div>
         <Navigation />

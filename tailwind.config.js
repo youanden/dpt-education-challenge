@@ -45,6 +45,8 @@ module.exports = {
         bl: {
           default: "#004185",
           highlight: "#1F5B99",
+          lightest: "#EBF3F7",
+          link: "#004285",
         },
         gr: {
           default: "#DBE3E7",
@@ -53,8 +55,6 @@ module.exports = {
           lighter: "#DBE3E7",
         },
         green: "#2d8700",
-        // Might as well be gr-default it's unnoticeably blue
-        // "light-blue": "#ebf3f7",
       },
       spacing: {},
     },
