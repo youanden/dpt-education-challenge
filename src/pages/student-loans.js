@@ -146,7 +146,7 @@ const StudentLoans = () => (
               }
               aria-current="page"
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Student loans, forgiveness
               </a>
             </li>
@@ -155,7 +155,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 My Federal Student Aid login
               </a>
             </li>
@@ -164,7 +164,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 FSA ID login
               </a>
             </li>
@@ -173,7 +173,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Directory of loan servicers
               </a>
             </li>
@@ -182,7 +182,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Repaying your loans
               </a>
             </li>
@@ -191,7 +191,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Income-driven repayment
               </a>
             </li>
@@ -200,7 +200,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Loan consolidation
               </a>
             </li>
@@ -209,7 +209,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Defaulted student loans
               </a>
             </li>
@@ -218,7 +218,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Defer student loans
               </a>
             </li>
@@ -227,7 +227,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Cancel student loans
               </a>
             </li>
@@ -236,7 +236,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Student loan forgiveness
               </a>
             </li>
@@ -245,7 +245,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 FAFSA
               </a>
             </li>
@@ -254,7 +254,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 FERPA
               </a>
             </li>
@@ -263,7 +263,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 Tax forms, 1098
               </a>
             </li>
@@ -272,7 +272,7 @@ const StudentLoans = () => (
                 "mt-1 group flex items-center pr-2 py-1 text-link leading-5 font-normal text-bl hover:font-bold focus:outline-none focus:font-bold transition ease-in-out duration-150"
               }
             >
-              <a href={""} className={"truncate text-bl text-link"}>
+              <a href={"#"} className={"truncate text-bl text-link"}>
                 ESSA (Every Student Succeeds Act)
               </a>
             </li>
