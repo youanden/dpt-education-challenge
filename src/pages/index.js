@@ -39,7 +39,7 @@ const IndexPage = () => (
           image={`student_loans.jpg`}
           heading={`Student loans`}
           body={`Get all the info you need to apply for or manage repayment of your federal student loans.`}
-          link={`/loans`}
+          link={`/student-loans`}
           cta={`Explore`}
           className={"w-full sm:w-1/2 lg:w-1/4"}
         />
