@@ -53,6 +53,7 @@ module.exports = {
         transparent: "transparent",
         "dark-gray": "#2d2e2f",
         "light-gray": "#565c65",
+        "dirty-white": "#DBE3E7",
         green: "#2d8700",
         "deep-blue": "#004285",
         "light-blue": "#ebf3f7",
