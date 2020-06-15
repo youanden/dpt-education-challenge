@@ -16,6 +16,16 @@ import "../../css/navigation.css"
 // TODO: https://www.npmjs.com/package/react-click-outside
 const Navigation = () => {
   const [nav, setNav] = useState(menu)
+  const handleMenuExit = (activeLabel, index) => {
+    const openMenus = Object.values(nav).filter(i => i.isOpen)
+    const hasOpenMenu = openMenus.length
+    if (!hasOpenMenu) return
+    const eventMatchesActiveMegaMenu = openMenus[0]["label"] === activeLabel
+    // Menu that is open must match the id of the current firing event
+    if (!eventMatchesActiveMegaMenu) return
+    setNav(prevNav => prevNav.map(i => ({ ...i, isOpen: false })))
+    document.querySelector(`[aria-controls='megamenu-${index}']`).focus()
+  }
   return (
     <nav
       id="main-navigation"
@@ -35,7 +45,7 @@ const Navigation = () => {
                         "px-4 group space-x-2 inline-flex items-center text-base leading-4 font-bold cursor-pointer focus:outline-none focus:border-blue-300 focus:shadow-outline-blue",
                         item.isOpen ? "bg-bl text-white" : "text-gray-500",
                       ].join(" ")}
-                      onClick={() => {
+                      onClick={e => {
                         setNav(prevNav => {
                           return [
                             ...prevNav
@@ -78,29 +88,13 @@ const Navigation = () => {
                       <div className={classNames({ hidden: !item.isOpen })}>
                         <div className="mt-16 font-body font-bold absolute inset-x-0 transform shadow-lg text-white bg-bl">
                           <ReactMegaMenu
-                            onExit={activeLabel => {
-                              const openMenus = Object.values(nav).filter(
-                                i => i.isOpen
-                              )
-                              const hasOpenMenu = openMenus.length
-                              if (!hasOpenMenu) return
-                              const eventMatchesActiveMegaMenu =
-                                openMenus[0]["label"] === activeLabel
-                              // Menu that is open must match the id of the current firing event
-                              if (!eventMatchesActiveMegaMenu) return
-                              setNav(prevNav =>
-                                prevNav.map(i => ({ ...i, isOpen: false }))
-                              )
-                              document
-                                .querySelector(
-                                  `[aria-controls='megamenu-${index}']`
-                                )
-                                .focus()
-                            }}
+                            onExit={activeLabel =>
+                              handleMenuExit(activeLabel, index)
+                            }
                             label={item.label}
                             styleConfig={{
                               contentProps: {
-                                className: "font-medium",
+                                className: "font-md",
                                 id: `megamenu-content-${index}`,
                                 role: "tabpanel",
                               },
