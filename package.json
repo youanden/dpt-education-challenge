@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Georgiy Slobodenyuk <georgiy@absoluteweb.com>",
   "dependencies": {
+    "@babel/preset-env": "^7.10.2",
     "@tailwindcss/ui": "^0.3.0",
     "classnames": "^2.2.6",
     "framer-motion": "^1.11.0",
@@ -42,6 +43,10 @@
   },
   "keywords": [
     "gatsby"
+  ],
+  "browserslist": [
+    ">0.25%",
+    "not dead"
   ],
   "license": "MIT",
   "scripts": {
