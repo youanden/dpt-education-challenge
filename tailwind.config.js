@@ -21,6 +21,7 @@ module.exports = {
     },
     fontSize: {
       sm: ["14px", "20px"],
+      16: ["16px", "20px"],
       base: ["18px", "24px"],
       md: ["20px", "32px"],
       lg: ["26px", "34px"],
@@ -57,6 +58,7 @@ module.exports = {
           lighter: "#DBE3E7",
         },
         green: "#2d8700",
+        red: "#981F33",
       },
       spacing: {},
     },

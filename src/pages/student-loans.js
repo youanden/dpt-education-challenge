@@ -47,7 +47,7 @@ const StudentLoans = () => {
               <h1 className={"text-h1 leading-10 font-bold mb-8"}>
                 Student loans, forgiveness
               </h1>
-              <p class={"text-base leading-8 max-w-2xl"}>
+              <p className={"text-base leading-8 max-w-2xl"}>
                 The US Department of Education provides college and university
                 students with low-interest federal student loans and other aid.
                 To see if you qualify for a Pell grant, direct loan, Parent PLUS
@@ -76,13 +76,7 @@ const StudentLoans = () => {
                     >
                       Determine if you are Eligible
                     </h4>
-                    <button
-                      className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
-                      }
-                    >
-                      Determine
-                    </button>
+                    <button className={"btn-blue"}>Determine</button>
                   </div>
                   <div
                     className={
@@ -105,13 +99,7 @@ const StudentLoans = () => {
                     >
                       Create your FSA ID
                     </h4>
-                    <button
-                      className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
-                      }
-                    >
-                      Create ID
-                    </button>
+                    <button className={"btn-blue"}>Create ID</button>
                   </div>
                   <div
                     className={
@@ -134,13 +122,7 @@ const StudentLoans = () => {
                     >
                       Complete the FAFSA Form
                     </h4>
-                    <button
-                      className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
-                      }
-                    >
-                      Complete
-                    </button>
+                    <button className={"btn-blue"}>Complete</button>
                   </div>
                 </div>
               </div>
@@ -488,6 +470,7 @@ const StudentLoans = () => {
         </div>
         <ReturnToTop />
       </div>
+      <PageFeedback />
     </Layout>
   )
 }

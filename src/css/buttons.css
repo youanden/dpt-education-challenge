@@ -7,6 +7,12 @@ button:focus,
 .btn {
     @apply items-center px-6 py-2 border text-base leading-6 font-medium rounded-md transition ease-in-out duration-150;
 }
+.btn-blue {
+    @apply bg-bl text-white px-5 py-3 rounded whitespace-no-wrap transition ease-in-out duration-150;
+}
+.btn-blue:hover {
+    @apply bg-bl-dark;
+}
 .btn-menu {
     @apply btn p-3;
 }
