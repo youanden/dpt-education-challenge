@@ -1,14 +1,16 @@
 import React from "react"
+import PropTypes from "prop-types"
 
-const Search = () => {
+const Search = ({ id }) => {
+  const elId = "search" + (id ? id : "")
   return (
     <div className="max-w-lg w-full lg:max-w-xs">
-      <label htmlFor="search" className="sr-only">
+      <label htmlFor={elId} className="sr-only">
         What are you searching for...
       </label>
       <div className="relative">
         <input
-          id="search"
+          id={elId}
           className="block w-full pr-10 pl-3 py-2 border-1 border-bl rounded leading-5 bg-white placeholder-gray-500 focus:outline-none focus:placeholder-gray-400 focus:border-blue-300 focus:shadow-outline-blue sm:text-sm transition duration-150 ease-in-out"
           placeholder="What are you searching for..."
           type="search"
@@ -29,6 +31,12 @@ const Search = () => {
       </div>
     </div>
   )
+}
+Search.propTypes = {
+  id: PropTypes.string,
+}
+Search.defaultProps = {
+  id: ``,
 }
 
 export default Search

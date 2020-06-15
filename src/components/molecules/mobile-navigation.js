@@ -56,7 +56,7 @@ const MobileNavigation = () => {
           </button>
           <div className="drawer__body js-drawer__body">
             <div className="px-4 mt-14 mb-4">
-              <Search />
+              <Search id={"mobile"} />
             </div>
             <div>
               <h4 id="mobileNavTitle" className={"sr-only"}>
