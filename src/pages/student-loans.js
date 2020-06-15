@@ -51,13 +51,13 @@ const StudentLoans = () => {
                 <div className={"md:grid md:grid-cols-3 md:gap-4"}>
                   <div
                     className={
-                      "flex items-center justify-between md:block bg-bl-lightest mt-6 p-2 md:p-8 rounded"
+                      "flex items-center justify-between bg-bl-lightest mt-6 p-2 md:p-6 md:flex-col justify-center md:items-start rounded"
                     }
                   >
-                    <div className="w-1/5">
+                    <div className="">
                       <div
                         className={
-                          "w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
+                          "mr-2 w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
                         }
                       >
                         1
@@ -65,7 +65,7 @@ const StudentLoans = () => {
                     </div>
                     <h4
                       className={
-                        "w-3/5 pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
+                        "w-full pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Determine if you are Eligible
@@ -80,13 +80,13 @@ const StudentLoans = () => {
                   </div>
                   <div
                     className={
-                      "flex items-center justify-between md:block bg-bl-lightest mt-6 p-2 md:p-8 rounded"
+                      "flex items-center justify-between bg-bl-lightest mt-6 p-2 md:p-6 md:flex-col justify-center md:items-start rounded"
                     }
                   >
-                    <div className="w-1/5">
+                    <div className="">
                       <div
                         className={
-                          "w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
+                          "mr-2 w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
                         }
                       >
                         2
@@ -94,7 +94,7 @@ const StudentLoans = () => {
                     </div>
                     <h4
                       className={
-                        "text-md pr-3 text-gr-dark font-bold mt-6 mb-5"
+                        "w-full text-md pr-3 text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Create your FSA ID
@@ -109,13 +109,13 @@ const StudentLoans = () => {
                   </div>
                   <div
                     className={
-                      "flex items-center justify-between md:block bg-bl-lightest mt-6 p-2 md:p-8 rounded"
+                      "flex items-center justify-between bg-bl-lightest mt-6 p-2 md:p-6 md:flex-col justify-center md:items-start rounded"
                     }
                   >
-                    <div className="w-1/5">
+                    <div className="">
                       <div
                         className={
-                          "w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
+                          "mr-2 w-12 h-12 leading-8 flex justify-center items-center bg-green rounded-full text-white text-link font-display text-center"
                         }
                       >
                         3
@@ -123,7 +123,7 @@ const StudentLoans = () => {
                     </div>
                     <h4
                       className={
-                        "w-3/5 pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
+                        "w-full pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Complete the FAFSA Form
