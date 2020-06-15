@@ -1,6 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
 
-// TODO: https://www.npmjs.com/package/react-click-outside
 const Search = () => {
   return (
     <div className="max-w-lg w-full lg:max-w-xs">

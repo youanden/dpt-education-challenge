@@ -65,13 +65,13 @@ const StudentLoans = () => {
                         1
                       </div>
                     </div>
-                    <h4
+                    <span
                       className={
-                        "w-full pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
+                        "w-full pr-2 font-display text-md text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Determine if you are Eligible
-                    </h4>
+                    </span>
                     <button className={"btn-blue"}>Determine</button>
                   </div>
                   <div
@@ -88,13 +88,13 @@ const StudentLoans = () => {
                         2
                       </div>
                     </div>
-                    <h4
+                    <span
                       className={
-                        "w-full text-md pr-3 text-gr-dark font-bold mt-6 mb-5"
+                        "w-full text-md font-display pr-3 text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Create your FSA ID
-                    </h4>
+                    </span>
                     <button className={"btn-blue"}>Create ID</button>
                   </div>
                   <div
@@ -111,13 +111,13 @@ const StudentLoans = () => {
                         3
                       </div>
                     </div>
-                    <h4
+                    <span
                       className={
-                        "w-full pr-2 text-md text-gr-dark font-bold mt-6 mb-5"
+                        "w-full pr-2 font-display text-md text-gr-dark font-bold mt-6 mb-5"
                       }
                     >
                       Complete the FAFSA Form
-                    </h4>
+                    </span>
                     <button className={"btn-blue"}>Complete</button>
                   </div>
                 </div>
@@ -147,11 +147,11 @@ const StudentLoans = () => {
               </h2>
               <div className={"grid gap-8 mt-10 md:mt-0 order-1 xl:order-none"}>
                 <div className={"md:grid md:grid-cols-2 md:gap-8"}>
-                  <article>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       Directory of loan servicers
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -160,10 +160,10 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>Repaying your loans</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -172,12 +172,12 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       Income-driven repayment
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -186,10 +186,10 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>Loan consolidation</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -198,12 +198,12 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       Defaulted student loans
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -212,10 +212,10 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>Defer student loans</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -224,12 +224,12 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       Cancel student loans
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -238,26 +238,27 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       Student loan forgiveness
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
-                      <a className="w-full" href="#">
+                    <p
+                      className={
+                        "leading-8 text-gr-light text-base leading-8 max-w-2xl"
+                      }
+                    >
+                      <a className="underline block text-bl-link" href="#">
                         Public Service Loan Forgiveness (PSLF)
                       </a>
-                      <a className="w-full" href="#">
+                      <a className="underline block text-bl-link" href="#">
                         Teacher Loan Forgiveness Program
                       </a>
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
-                      Article Link
-                    </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>FAFSA</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -266,10 +267,10 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>FERPA</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -278,10 +279,10 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>Tax forms, 1098</h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -290,12 +291,12 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
-                  <article>
+                  </div>
+                  <div>
                     <h3 className={"text-h3 font-bold"}>
                       ESSA (Every Student Succeeds Act)
                     </h3>
-                    <p className={"text-gr-light text-base my-2"}>
+                    <p className={"text-gr-light text-base leading-6"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
@@ -304,7 +305,7 @@ const StudentLoans = () => {
                     <a href="#" className={"text-bl text-link underline"}>
                       Article Link
                     </a>
-                  </article>
+                  </div>
                 </div>
               </div>
             </section>
