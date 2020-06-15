@@ -43,7 +43,7 @@ const Navigation = () => {
                       type="button"
                       className={[
                         "px-4 group space-x-2 inline-flex items-center text-base leading-4 font-bold cursor-pointer focus:outline-none focus:border-blue-300 focus:shadow-outline-blue",
-                        item.isOpen ? "bg-bl text-white" : "text-gray-500",
+                        item.isOpen ? "bg-bl text-white" : "text-gr-dark",
                       ].join(" ")}
                       onClick={e => {
                         setNav(prevNav => {
