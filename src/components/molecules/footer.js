@@ -238,7 +238,7 @@ const Footer = () => {
           </li>
         </ul>
       </nav>
-      <nav className="hidden sm:block border-b border-t border-gray-700">
+      <nav className="hidden sm:block border-b-1 border-t-1 border-bl-highlight">
         <ul className="container text-white font-display font-bold py-4 flex flex-wrap max-w-max-content justify-center px-4 sm:px-6 lg:px-8 ">
           <li className="p-2">
             <a href="#" className="text-base leading-6">
@@ -498,7 +498,7 @@ const Footer = () => {
         </div>
       </div>
       <nav className="container">
-        <div className="text-white font-body text-sm py-4 flex flex-wrap sm:px-6 lg:px-8 divide-x-1 divide-x-reverse divide-gray-700 self-start">
+        <div className="text-white font-body text-sm py-4 flex flex-wrap sm:px-6 lg:px-8 lg:-mx-4 divide-x-1 divide-x-reverse divide-gray-700 self-start">
           <div className="mb-4 py-1 px-4 md:pr-4 border-r-1 border-gray-700">
             <a href="#" className="leading-6">
               About us
@@ -539,7 +539,7 @@ const Footer = () => {
               Newsletter sign up
             </a>
           </div>
-          <div className="mb-4 py-1 px-4">
+          <div className="mb-4 py-1 px-4" style={{ borderRight: 0 }}>
             <a href="#" className="leading-6">
               Press releases
             </a>
