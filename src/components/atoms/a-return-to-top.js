@@ -7,7 +7,10 @@ const ReturnToTop = props => {
       <a
         href={"#"}
         className={"inline-block text-link py-6 underline"}
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        onClick={e => {
+          e.preventDefault()
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        }}
       >
         Return to top
       </a>
