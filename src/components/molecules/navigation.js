@@ -132,7 +132,7 @@ const Navigation = () => {
                                   "p-4 bg-bl-highlight cursor-default relative group",
                               },
                               containerProps: {
-                                className: "w-full border-t-1 border-gray-500",
+                                className: "w-full",
                                 id: "megamenu-" + index,
                                 "aria-hidden": !item.isOpen,
                               },
