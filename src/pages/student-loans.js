@@ -16,7 +16,7 @@ const StudentLoans = () => {
       <SEO title="Student loans, forgiveness" />
       <div className={"container mx-auto"}>
         <nav
-          className={"hidden sm:flex items-center leading-5 font-sm mt-2 mb-10"}
+          className={"hidden sm:flex items-center leading-5 font-sm mt-4 mb-10"}
         >
           <a
             href="/"
@@ -36,7 +36,11 @@ const StudentLoans = () => {
           </span>
         </nav>
         <div className={"flex flex-wrap row"}>
-          <div className={"p-2 md:pr-5 w-full sm:w-4/5 xl:w-3/5 text-gr-light"}>
+          <div
+            className={
+              "p-2 md:p-0 md:pr-5 w-full sm:w-4/5 xl:w-3/5 text-gr-light"
+            }
+          >
             <section className={"border-b-1 border-gr-lighter pb-15"}>
               <h1 className={"text-h1 leading-10 font-bold mb-8"}>
                 Student loans, forgiveness
@@ -72,7 +76,7 @@ const StudentLoans = () => {
                     </h4>
                     <button
                       className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap"
+                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
                       }
                     >
                       Determine
@@ -101,7 +105,7 @@ const StudentLoans = () => {
                     </h4>
                     <button
                       className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap"
+                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
                       }
                     >
                       Create ID
@@ -130,7 +134,7 @@ const StudentLoans = () => {
                     </h4>
                     <button
                       className={
-                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap"
+                        "button bg-bl text-white px-5 py-3 rounded whitespace-no-wrap hover:bg-bl-dark transition ease-in-out duration-150"
                       }
                     >
                       Complete
@@ -164,7 +168,9 @@ const StudentLoans = () => {
               <div className={"grid gap-8 mt-10 md:mt-0 order-1 xl:order-none"}>
                 <div className={"md:grid md:grid-cols-2 md:gap-8"}>
                   <article>
-                    <h3 className={"text-h3 font-bold"}>Article Title</h3>
+                    <h3 className={"text-h3 font-bold"}>
+                      Directory of loan servicers
+                    </h3>
                     <p className={"text-gr-light text-base my-2"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
@@ -176,7 +182,7 @@ const StudentLoans = () => {
                     </a>
                   </article>
                   <article>
-                    <h3 className={"text-h3 font-bold"}>Article Title</h3>
+                    <h3 className={"text-h3 font-bold"}>Repaying your loans</h3>
                     <p className={"text-gr-light text-base my-2"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
@@ -188,7 +194,9 @@ const StudentLoans = () => {
                     </a>
                   </article>
                   <article>
-                    <h3 className={"text-h3 font-bold"}>Article Title</h3>
+                    <h3 className={"text-h3 font-bold"}>
+                      Income-driven repayment
+                    </h3>
                     <p className={"text-gr-light text-base my-2"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
@@ -200,7 +208,7 @@ const StudentLoans = () => {
                     </a>
                   </article>
                   <article>
-                    <h3 className={"text-h3 font-bold"}>Article Title</h3>
+                    <h3 className={"text-h3 font-bold"}>Loan consolidation</h3>
                     <p className={"text-gr-light text-base my-2"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
@@ -212,7 +220,101 @@ const StudentLoans = () => {
                     </a>
                   </article>
                   <article>
-                    <h3 className={"text-h3 font-bold"}>Article Title</h3>
+                    <h3 className={"text-h3 font-bold"}>
+                      Defaulted student loans
+                    </h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>Defer student loans</h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>
+                      Cancel student loans
+                    </h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>
+                      Student loan forgiveness
+                    </h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      <a className="w-full" href="#">
+                        Public Service Loan Forgiveness (PSLF)
+                      </a>
+                      <a className="w-full" href="#">
+                        Teacher Loan Forgiveness Program
+                      </a>
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>FAFSA</h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>FERPA</h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>Tax forms, 1098</h3>
+                    <p className={"text-gr-light text-base my-2"}>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Accusamus ad, alias consequatur cum dolores et expedita
+                      hic illo ipsum laudantium neque nesciunt, nihil nulla
+                      perspiciatis quidem quod quos ratione sunt!
+                    </p>
+                    <a href="#" className={"text-bl text-link underline"}>
+                      Article Link
+                    </a>
+                  </article>
+                  <article>
+                    <h3 className={"text-h3 font-bold"}>
+                      ESSA (Every Student Succeeds Act)
+                    </h3>
                     <p className={"text-gr-light text-base my-2"}>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                       Accusamus ad, alias consequatur cum dolores et expedita
