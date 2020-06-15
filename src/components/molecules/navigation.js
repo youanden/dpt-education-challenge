@@ -107,8 +107,7 @@ const Navigation = () => {
                                 role: "tablist",
                               },
                               menuItemProps: {
-                                className:
-                                  "p-4 hover:bg-bl-highlight cursor-default relative group",
+                                className: "p-4 cursor-default relative group",
                                 "aria-selected": false,
                                 role: "tab",
                                 "aria-controls": `megamenu-content-`,
