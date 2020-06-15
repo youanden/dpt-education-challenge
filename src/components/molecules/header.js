@@ -85,31 +85,33 @@ const Header = ({ siteTitle }) => {
               </svg>
             </button>
           </div>
-          <div className="flex-1 text-right relative py-2 hidden md:flex justify-end items-center">
-            <a href="#">Sitemap (A-Z)</a>
-            <button
-              id="language-menu"
-              aria-haspopup="true"
-              aria-expanded={isLanguageMenuOpen}
-              className="ml-4"
-              onClick={() => setLanguageMenuOpen(!isLanguageMenuOpen)}
-            >
-              <span>English</span>
-              <svg
-                className={[
-                  "inline ml-2 h-5 w-5 transition ease-in-out duration-150 transform",
-                  isLanguageMenuOpen ? "-rotate-180" : "text-gray-400",
-                ].join(" ")}
-                viewBox="0 0 20 20"
-                fill="currentColor"
+          <div className="flex-1 text-right relative py-2 ">
+            <div className="hidden md:flex justify-end items-center">
+              <a href="#">Sitemap (A-Z)</a>
+              <button
+                id="language-menu"
+                aria-haspopup="true"
+                aria-expanded={isLanguageMenuOpen}
+                className="ml-4"
+                onClick={() => setLanguageMenuOpen(!isLanguageMenuOpen)}
               >
-                <path
-                  fillRule="evenodd"
-                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </button>
+                <span>English</span>
+                <svg
+                  className={[
+                    "inline ml-2 h-5 w-5 transition ease-in-out duration-150 transform",
+                    isLanguageMenuOpen ? "-rotate-180" : "text-gray-400",
+                  ].join(" ")}
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
             <Transition
               show={isLanguageMenuOpen}
               enter="transition ease-out duration-100 transform"
