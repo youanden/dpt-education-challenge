@@ -8,7 +8,7 @@ import "../css/loans.css"
 const StudentLoans = () => {
   const [isMobileOpen, setMobileOpen] = useState(false)
   const sidebarMenuClasses = classNames(
-    "order-first w-full md:order-last in-this-section sm:w-1/5 xl:ml-auto",
+    "px-4 md:p-0 order-first w-full md:order-last in-this-section sm:w-1/5 xl:ml-auto",
     isMobileOpen ? "" : "hidden md:block"
   )
   return (
