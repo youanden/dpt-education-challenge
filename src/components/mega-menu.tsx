@@ -1,5 +1,6 @@
 import * as React from "react"
 import { css } from "glamor"
+import enhanceWithClickOutside from "react-click-outside"
 
 /**
  * TYPES
@@ -22,7 +23,7 @@ type Props = {
   direction?: Directions
   data: Section[]
   styleConfig: StyleConfig
-  onExit?: () => void
+  onExit?: (string) => void
   label?: string
 }
 type State = {
@@ -206,11 +207,15 @@ export class ReactMegaMenu extends React.Component<Props, State> {
     window.removeEventListener("keydown", keyHandler.bind(this))
   }
 
+  handleClickOutside = () => {
+    this.mouseLeave()
+  }
+
   mouseLeave = () => {
     this.dismissTimeout()
-    const { onExit } = this.props
+    const { onExit, label } = this.props
     if (onExit) {
-      onExit()
+      onExit(label)
     }
     this.setState({ activeRow: -1 })
   }
@@ -459,4 +464,4 @@ const styles: any = {
   }),
 }
 
-export default ReactMegaMenu
+export default enhanceWithClickOutside(ReactMegaMenu)
