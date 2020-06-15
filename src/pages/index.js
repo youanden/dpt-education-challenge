@@ -67,7 +67,7 @@ const IndexPage = () => (
           image={`data_and_research.jpg`}
           heading={`Data and research`}
           body={`Explore and download data and learn about education-related data and research.`}
-          link={`/a`}
+          link={`#`}
           cta={`Explore`}
           className={""}
         />
