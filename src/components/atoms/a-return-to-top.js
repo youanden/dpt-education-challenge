@@ -6,7 +6,7 @@ const easeInCubic = function (t) {
 const ReturnToTop = () => {
   return (
     <button
-      class={"text-bl-link py-6 underline"}
+      className={"text-bl-link py-6 underline"}
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
     >
       Return to top
