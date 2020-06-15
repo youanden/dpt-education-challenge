@@ -1,20 +1,17 @@
-main {
-    .in-this-section {
-        .group {
-            @apply block relative border-b border-gr-lighter;
-        }
-        .group::after {
-            content: ' ';
-            width: 4px;
-            top: 2px;
-            right: 0;
-            bottom: 2px;
-            border-top-left-radius: 25%;
-            border-bottom-left-radius: 25%;
-            @apply absolute hidden bg-bl;
-        }
-        .group:hover::after, .group.active::after {
-            @apply block;
-        }
+
+.in-this-section {
+    .group {
+        @apply block relative border-b border-gr-lighter;
+    }
+    .group::after {
+        content: ' ';
+        width: 4px;
+        top: 2px;
+        right: 0;
+        bottom: 2px;
+        @apply absolute hidden bg-bl;
+    }
+    .group.active::after {
+        @apply block;
     }
 }
