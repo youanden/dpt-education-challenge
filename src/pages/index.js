@@ -30,7 +30,7 @@ const IndexPage = () => (
     <SEO title="Home" />
     <section className="main-categories">
       <motion.div
-        className="flex flex-wrap container mx-auto divide-x divide-white"
+        className="grid grid-cols-2 lg:grid-cols-4 container mx-auto gap-1"
         variants={container}
         animate={"show"}
         initial={"hidden"}
@@ -41,7 +41,7 @@ const IndexPage = () => (
           body={`Get all the info you need to apply for or manage repayment of your federal student loans.`}
           link={`/student-loans`}
           cta={`Explore`}
-          className={"w-full sm:w-1/2 lg:w-1/4"}
+          className={""}
         />
         <ATallContent
           image={`grants_and_programs.jpg`}
@@ -50,7 +50,7 @@ const IndexPage = () => (
           grants awarded.`}
           link={`/grants`}
           cta={`Explore`}
-          className={"w-full sm:w-1/2 lg:w-1/4"}
+          className={""}
         />
         <ATallContent
           image={`laws_and_guidance.jpg`}
@@ -58,7 +58,7 @@ const IndexPage = () => (
           body={`Find federal education legislation, regulations, guidance, and other policy documents.`}
           link={`/grants`}
           cta={`Explore`}
-          className={"w-full sm:w-1/2 lg:w-1/4"}
+          className={""}
         />
         <ATallContent
           image={`data_and_research.jpg`}
@@ -66,25 +66,32 @@ const IndexPage = () => (
           body={`Explore and download data and learn about education-related data and research.`}
           link={`/a`}
           cta={`Explore`}
-          className={"w-full sm:w-1/2 lg:w-1/4"}
+          className={""}
         />
       </motion.div>
     </section>
-    <div className={"container max-w-7xl py-14 text-gr-dark"}>
-      <span className={"text-sm uppercase"}>Mission</span>
-      <p className={"text-lg font-display font-bold mt-4"}>
+    <div
+      className={
+        "container flex flex-wrap justify-center px-3 lg:px-0 max-w-7xl py-14 text-gr-dark"
+      }
+    >
+      <span className={"w-full text-sm tracking-wider uppercase"}>Mission</span>
+      <p className={"text-lg font-display font-bold mt-2"}>
         Our mission is to promote student achievement and preparation for global
         competitiveness by fostering educational excellence and ensuring equal
         access.
       </p>
     </div>
-    <section className="container max-w-7xl about-highlights grid grid-cols-3 gap-3 mb-8">
+    <section className="container max-w-7xl about-highlights grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
       <ATallContent
         image={`about_ed_gov.jpg`}
         heading={`About Department of Education`}
         link={`/a`}
         cta={`Learn more`}
-        className={"rounded-md overflow-hidden"}
+        className={
+          "mx-3 md:m-0 h-banner-mobile md:h-banner rounded-md overflow-hidden"
+        }
+        additionalInnerClassName={"h-mbanner md:h-banner"}
       />
       <ATallContent
         image={`betsy_devos.jpg`}
@@ -92,15 +99,18 @@ const IndexPage = () => (
         subtitle={"Secretary of Education"}
         link={`/a`}
         cta={`Learn more`}
-        className={"rounded-md overflow-hidden"}
+        className={
+          "mx-3 md:m-0 h-mbanner md:h-banner rounded-md overflow-hidden"
+        }
+        additionalInnerClassName={"h-mbanner md:h-banner"}
       />
       <ATallContent
         heading={`Betsy DeVos`}
         subtitle={"Secretary of Education"}
         link={`/a`}
         cta={`Learn more`}
-        className={"bg-bl"}
-        innerClassName={"p-4 py-8"}
+        className={"mx-3 md:m-0 bg-bl overflow-hidden rounded-md"}
+        innerClassName={"md:h-banner p-4 py-8"}
       >
         <header>
           <svg
@@ -111,7 +121,11 @@ const IndexPage = () => (
           </svg>
           <strong className={"block p-4"}>@BetsyDeVosED</strong>
         </header>
-        <p className={"font-display text-md leading-10 tracking-wide p-4"}>
+        <p
+          className={
+            "font-display text-base md:text-md leading-10 tracking-wide p-4"
+          }
+        >
           While these are challenging times, we must take this opportunity, and
           use these new resources, to transform education to meet the needs of
           all students, of all ages, everywhere. If we do that, we will emerge

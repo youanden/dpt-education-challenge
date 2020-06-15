@@ -245,7 +245,7 @@ const Header = ({ siteTitle }) => {
           </div>
         </div>
 
-        <div className="bg-white h-32 flex items-center p-4 md:p-0 justify-end">
+        <div className="bg-white md:h-32 flex items-center p-4 md:p-0 justify-end">
           <div className="container flex justify-between">
             <Link to="/" className="w-2/3 md:w-1/3">
               <img src={logo.src} alt={"U.S. Department of Education Logo"} />

@@ -40,6 +40,7 @@ module.exports = {
     extend: {
       height: {
         banner: "680px",
+        mbanner: "450px",
       },
       colors: {
         bl: {
@@ -47,6 +48,7 @@ module.exports = {
           highlight: "#1F5B99",
           lightest: "#EBF3F7",
           link: "#004285",
+          dark: "#162E51",
         },
         gr: {
           default: "#DBE3E7",

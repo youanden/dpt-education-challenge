@@ -20,9 +20,7 @@ const ATallContent = props => {
       {image ? (
         <Img
           fluid={image}
-          className={
-            "w-full object-cover h-full object-center block absolute inset-0"
-          }
+          className={"block absolute inset-0"}
           style={{
             position: "absolute",
           }}
@@ -45,11 +43,13 @@ const ATallContent = props => {
             {props.subtitle}
           </span>
         ) : null}
-        <h2 className="text-lg font-display font-bold title-font mb-4">
+        <h2 className="text-lg font-display font-bold title-font md:mb-4">
           {props.heading}
         </h2>
-        {props.body ? <p className="text-base pb-6">{props.body}</p> : null}
-        <span className="inline-flex rounded-md">
+        {props.body ? (
+          <p className="hidden md:block text-base pb-6">{props.body}</p>
+        ) : null}
+        <span className="hidden md:inline-flex rounded-md">
           <button type="button" className="btn btn-ghost">
             {props.cta}
           </button>
@@ -64,7 +64,14 @@ const ATallContent = props => {
         variants={item}
       >
         <Link to={props.link}>
-          <div className={props.innerClassName}>{content}</div>
+          <div
+            className={[
+              props.innerClassName,
+              props.additionalInnerClassName,
+            ].join(" ")}
+          >
+            {content}
+          </div>
         </Link>
       </motion.div>
     </>
@@ -80,6 +87,7 @@ ATallContent.propTypes = {
   cta: PropTypes.string,
   className: PropTypes.string,
   innerClassName: PropTypes.string,
+  additionalInnerClassName: PropTypes.string,
 }
 
 ATallContent.defaultProps = {
@@ -90,7 +98,8 @@ ATallContent.defaultProps = {
   link: ``,
   cta: `Explore`,
   className: `bg-gray-100`,
-  innerClassName: `flex items-end w-full sm:py-12 py-16 sm:px-12 px-6 relative h-banner`,
+  innerClassName: `flex items-end w-full p-4 md:p-10 relative h-64 md:h-banner`,
+  additionalInnerClassName: ``,
 }
 
 export default ATallContent
