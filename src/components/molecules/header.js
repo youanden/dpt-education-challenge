@@ -261,7 +261,7 @@ const Header = ({ siteTitle }) => {
             <Link to="/" className="w-2/3 md:w-1/3">
               <img src={logo.src} alt={"U.S. Department of Education Logo"} />
             </Link>
-            <div className="hidden sm:flex w-2/3 md:w-2/5 items-center justify-center lg:ml-6 lg:justify-end">
+            <div className="hidden md:flex w-2/3 md:w-2/5 items-center justify-center lg:ml-6 lg:justify-end">
               <Search />
             </div>
             <MobileNavigation />
