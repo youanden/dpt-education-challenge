@@ -89,7 +89,7 @@ const IndexPage = () => (
       <ATallContent
         image={`about_ed_gov.jpg`}
         heading={`About Department of Education`}
-        link={`/a`}
+        link={`/`}
         cta={`Learn more`}
         className={
           "mx-3 md:m-0 h-mbanner md:h-banner rounded-md overflow-hidden"
@@ -103,7 +103,7 @@ const IndexPage = () => (
         }
         heading={`Betsy DeVos`}
         subtitle={"Secretary of Education"}
-        link={`/a`}
+        link={`/`}
         cta={`Learn more`}
         className={
           "mx-3 md:m-0 h-mbanner md:h-banner rounded-md overflow-hidden"
@@ -111,7 +111,7 @@ const IndexPage = () => (
         additionalInnerClassName={"h-mbanner md:h-banner"}
       />
       <ATallContent
-        link={`/a`}
+        link={`/`}
         className={"mx-3 md:m-0 bg-bl overflow-hidden rounded-md"}
         innerClassName={"md:h-banner p-4 py-8"}
       >
