@@ -20,6 +20,7 @@ const ATallContent = props => {
       {image ? (
         <Img
           fluid={image}
+          alt={props.alt}
           className={"block absolute inset-0"}
           style={{
             position: "absolute",
@@ -79,7 +80,8 @@ const ATallContent = props => {
 }
 
 ATallContent.propTypes = {
-  src: PropTypes.string,
+  image: PropTypes.string,
+  alt: PropTypes.string,
   heading: PropTypes.string,
   body: PropTypes.string,
   subtitle: PropTypes.string,
@@ -92,6 +94,7 @@ ATallContent.propTypes = {
 
 ATallContent.defaultProps = {
   image: ``,
+  alt: ``,
   heading: `Test Heading`,
   body: ``,
   subtitle: ``,

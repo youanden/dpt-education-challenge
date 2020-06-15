@@ -95,6 +95,9 @@ const IndexPage = () => (
       />
       <ATallContent
         image={`betsy_devos.jpg`}
+        alt={
+          "Betsy Devos posing for an official portrait with a bookshelf and Department of Education flag in the background."
+        }
         heading={`Betsy DeVos`}
         subtitle={"Secretary of Education"}
         link={`/a`}
@@ -105,10 +108,7 @@ const IndexPage = () => (
         additionalInnerClassName={"h-mbanner md:h-banner"}
       />
       <ATallContent
-        heading={`Betsy DeVos`}
-        subtitle={"Secretary of Education"}
         link={`/a`}
-        cta={`Learn more`}
         className={"mx-3 md:m-0 bg-bl overflow-hidden rounded-md"}
         innerClassName={"md:h-banner p-4 py-8"}
       >
