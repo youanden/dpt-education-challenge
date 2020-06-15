@@ -292,7 +292,7 @@ const Footer = () => {
           <div className="grid grid-cols-2 gap-8 xl:col-span-2">
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <span className="font-display text-base leading-5 font-semibold tracking-wider text-white">
+                <span className="font-display text-base leading-5 font-bold tracking-wider text-white">
                   Student loans
                 </span>
                 <ul className="mt-4">
@@ -331,7 +331,7 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <span className="font-display text-base leading-5 font-semibold tracking-wider text-white">
+                <span className="font-display text-base leading-5 font-bold tracking-wider text-white">
                   Grants and programs
                 </span>
                 <ul className="mt-4">
@@ -372,9 +372,9 @@ const Footer = () => {
             </div>
             <div className="md:grid md:grid-cols-2 md:gap-8">
               <div>
-                <h4 className="font-display text-base leading-5 font-semibold tracking-wider text-white">
+                <span className="font-display text-base leading-5 font-bold tracking-wider text-white">
                   Laws and guidance
-                </h4>
+                </span>
                 <ul className="mt-4">
                   <li>
                     <a
@@ -411,9 +411,9 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="mt-12 md:mt-0">
-                <h4 className="font-display text-base leading-5 font-semibold tracking-wider text-white">
+                <span className="font-display text-base leading-5 font-bold tracking-wider text-white">
                   Data and research
-                </h4>
+                </span>
                 <ul className="mt-4">
                   <li>
                     <a

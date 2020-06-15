@@ -38,16 +38,12 @@ const StudentLoans = () => {
           </span>
         </nav>
         <div className={"flex flex-wrap row"}>
-          <div
-            className={
-              "p-2 md:p-0 md:pr-5 w-full sm:w-4/5 xl:w-3/5 text-gr-light"
-            }
-          >
+          <div className={"p-2 md:p-0 md:pr-5 w-full sm:w-4/5 xl:w-3/5"}>
             <section className={"border-b-1 border-gr-lighter pb-15"}>
               <h1 className={"text-h1 leading-10 font-bold mb-8"}>
                 Student loans, forgiveness
               </h1>
-              <p className={"text-base leading-8 max-w-2xl"}>
+              <p className={"text-gr-light text-base leading-8 max-w-2xl"}>
                 The US Department of Education provides college and university
                 students with low-interest federal student loans and other aid.
                 To see if you qualify for a Pell grant, direct loan, Parent PLUS
@@ -468,8 +464,8 @@ const StudentLoans = () => {
             </nav>
           </div>
         </div>
-        <ReturnToTop />
       </div>
+      <ReturnToTop additionalClassName={""} />
       <PageFeedback />
     </Layout>
   )

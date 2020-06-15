@@ -25,6 +25,9 @@ const Header = ({ siteTitle }) => {
 
   return (
     <header className="w-full bg-white">
+      <a href="#main" className="sr-only focus:not-sr-only absolute top-0">
+        Skip to content
+      </a>
       <section className="bg-bl-lightest">
         <div className="container flex flex-wrap">
           <button
