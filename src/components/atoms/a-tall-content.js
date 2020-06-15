@@ -21,50 +21,66 @@ const ATallContent = props => {
         <Img
           fluid={image}
           alt={props.alt}
-          className={"block absolute inset-0"}
+          className={"block absolute inset-0 " + props.imageWrapperClassName}
           style={{
             position: "absolute",
           }}
         />
       ) : null}
       <div
-        className="inset-0 absolute"
+        className={"inset-0 absolute " + (props.shadowOverlay ? "" : "hidden")}
         style={{
           background:
             "linear-gradient(180deg, rgba(255,255,255,0) 35%, rgba(0,0,0,0.4) 100%)",
         }}
       ></div>
-      <div className="relative z-10 w-full ">
-        {props.subtitle ? (
-          <span
-            className={
-              "block text-sm font-medium tracking-wider uppercase mb-2"
-            }
-          >
-            {props.subtitle}
+      {props.layout === "overlay" ? (
+        <div className="relative z-10 w-full ">
+          {props.subtitle ? (
+            <span
+              className={
+                "block text-sm font-medium tracking-wider uppercase mb-2"
+              }
+            >
+              {props.subtitle}
+            </span>
+          ) : null}
+          <h2 className="text-lg font-display font-bold title-font md:mb-4">
+            {props.heading}
+          </h2>
+          {props.body ? (
+            <p className="hidden md:block text-base pb-6">{props.body}</p>
+          ) : null}
+          <span className="hidden md:inline-flex rounded-md">
+            <button type="button" className="btn btn-ghost">
+              {props.cta}
+            </button>
           </span>
-        ) : null}
-        <h2 className="text-lg font-display font-bold title-font md:mb-4">
-          {props.heading}
-        </h2>
-        {props.body ? (
-          <p className="hidden md:block text-base pb-6">{props.body}</p>
-        ) : null}
-        <span className="hidden md:inline-flex rounded-md">
-          <button type="button" className="btn btn-ghost">
+        </div>
+      ) : null}
+      {props.layout === "square" ? (
+        <>
+          <div className="spacer h-mbanner"></div>
+          <h2 className="mt-4 text-lg font-display font-bold title-font">
+            {props.heading}
+          </h2>
+          <button type="button" className="underline text-bl-link">
             {props.cta}
           </button>
-        </span>
-      </div>
+        </>
+      ) : null}
     </>
   )
+
   return (
     <>
       <motion.div
-        className={["text-white", props.className].join(" ")}
+        className={
+          props.className + (props.layout === "overlay" ? " text-white" : "")
+        }
         variants={item}
       >
-        <Link to={props.link}>
+        <Link to={props.link} className={"block"}>
           <div
             className={[
               props.innerClassName,
@@ -90,6 +106,9 @@ ATallContent.propTypes = {
   className: PropTypes.string,
   innerClassName: PropTypes.string,
   additionalInnerClassName: PropTypes.string,
+  imageWrapperClassName: PropTypes.string,
+  layout: PropTypes.string,
+  shadowOverlay: PropTypes.bool,
 }
 
 ATallContent.defaultProps = {
@@ -100,9 +119,12 @@ ATallContent.defaultProps = {
   subtitle: ``,
   link: ``,
   cta: `Explore`,
-  className: `bg-gray-100`,
+  className: `text-white bg-gray-100`,
   innerClassName: `flex items-end w-full p-4 md:p-10 relative h-64 md:h-banner`,
   additionalInnerClassName: ``,
+  imageWrapperClassName: ``,
+  layout: `overlay`,
+  shadowOverlay: true,
 }
 
 export default ATallContent

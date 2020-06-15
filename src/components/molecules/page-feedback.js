@@ -19,19 +19,19 @@ const PageFeedback = () => {
         <section className={currentSection === "initial" ? "" : "hidden"}>
           <label className="font-bold">
             <span className="mr-4">Is this page useful ?</span>
-            <button
-              className="underline p-5 text-bl-link"
-              onClick={() => setCurrentSection("thanks")}
-            >
-              Yes
-            </button>
-            <button
-              className="underline p-5 text-bl-link"
-              onClick={() => setCurrentSection("not-helpful")}
-            >
-              No
-            </button>
           </label>
+          <button
+            className="underline p-5 text-bl-link"
+            onClick={() => setCurrentSection("thanks")}
+          >
+            Yes
+          </button>
+          <button
+            className="underline p-5 text-bl-link"
+            onClick={() => setCurrentSection("not-helpful")}
+          >
+            No
+          </button>
         </section>
         <section
           className={"py-5 " + (currentSection === "thanks" ? "" : "hidden")}
