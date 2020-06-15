@@ -8,7 +8,7 @@ const PageDivider = () => {
         "container max-w-7xl flex items-center justify-center relative text-center m-auto my-8"
       }
     >
-      <div className="border-b absolute inset-x-0 top-2"></div>
+      <div className="mx-3 md:mx-0 border-b absolute inset-x-0 top-2"></div>
       <svg
         viewBox={divider.viewBox}
         className={"w-24 relative z-10 bg-white px-4"}

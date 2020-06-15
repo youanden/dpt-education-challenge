@@ -85,7 +85,7 @@ const IndexPage = () => (
         access.
       </p>
     </div>
-    <section className="container px-3 xl:px-0 max-w-7xl about-highlights grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
+    <section className="container xl:px-0 max-w-7xl about-highlights grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
       <ATallContent
         image={`about_ed_gov.jpg`}
         heading={`About Department of Education`}
@@ -141,21 +141,21 @@ const IndexPage = () => (
       </ATallContent>
     </section>
     <section className="container px-3 xl:px-0 max-w-7xl">
-      <div className="flex mx-auto flex-wrap mb-8 border-b-1">
-        <button className="py-3 mr-12 text-sm w-1/2 sm:w-auto justify-center sm:justify-start inline-flex items-center leading-none hover:text-gray-900 tracking-wider uppercase border-b border-bl">
+      <div className="text-left flex mx-auto flex-wrap mb-8 md:border-b-1">
+        <button className="py-3 mr-12 text-sm w-2/3 sm:w-auto sm:justify-start inline-flex items-center leading-none hover:text-gray-900 tracking-wider uppercase border-b border-bl">
           Press Releases
         </button>
-        <button className="py-3 mr-12 text-sm w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 inline-flex items-center leading-none hover:text-gray-900 tracking-wider uppercase border-b border-white">
+        <button className="py-3 mr-12 text-sm w-2/3 sm:w-auto sm:justify-start border-b-2 inline-flex items-center leading-none tracking-wider uppercase border-b border-gr md:border-white">
           Press Briefings
         </button>
-        <button className="py-3 mr-12 text-sm w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 inline-flex items-center leading-none hover:text-gray-900 tracking-wider uppercase border-b border-white">
+        <button className="py-3 mr-12 text-sm w-2/3 sm:w-auto sm:justify-start border-b-2 inline-flex items-center leading-none tracking-wider uppercase border-b border-gr md:border-white">
           Press Kit
         </button>
-        <button className="py-3 mr-12 text-sm w-1/2 sm:w-auto justify-center sm:justify-start border-b-2 inline-flex items-center leading-none hover:text-gray-900 tracking-wider uppercase border-b border-white">
+        <button className="py-3 mr-12 text-sm w-2/3 sm:w-auto sm:justify-start border-b-2 inline-flex items-center leading-none tracking-wider uppercase border-b border-gr md:border-white">
           ED Blog
         </button>
       </div>
-      <section className="text-gray-700 body-font mb-16">
+      <section className="mb-16">
         <div className="container mx-auto">
           <div className="-my-8 divide-y-1 divide-gr">
             <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
@@ -223,8 +223,8 @@ const IndexPage = () => (
         </div>
       </section>
     </section>
-    <section className="container max-w-7xl mt-16 top-articles">
-      <div className="grid grid-cols-3 gap-3 relative">
+    <section className="p-3 container max-w-7xl mt-16 top-articles">
+      <div className="md:grid md:grid-cols-3 gap-3 relative">
         <ATallContent
           image={`covid_19.jpg`}
           alt={"Image of Coronavirus"}
@@ -235,7 +235,7 @@ const IndexPage = () => (
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
           shadowOverlay={false}
-          className={"relative"}
+          className={"relative mb-8 md:mb-0"}
           additionalInnerClassName={""}
         />
         <ATallContent
@@ -250,7 +250,7 @@ const IndexPage = () => (
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
           shadowOverlay={false}
-          className={"relative"}
+          className={"relative mb-8 md:mb-0"}
           additionalInnerClassName={""}
         />
         <ATallContent
@@ -265,17 +265,17 @@ const IndexPage = () => (
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
           shadowOverlay={false}
-          className={"relative"}
+          className={"relative mb-8 md:mb-0"}
           additionalInnerClassName={""}
         />
       </div>
     </section>
     <div className="flex flex-col container items-start">
       <PageDivider />
-      <section className="container grid grid-cols-3 gap-3 max-w-7xl my-8">
+      <section className="p-3 md:p-0 container md:grid grid-cols-3 gap-3 max-w-7xl my-8">
         <a
           href="#"
-          className="flex items-center bg-bl text-white font-display font-bold text-md px-8 py-6 rounded-md"
+          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={mailIcon.viewBox} className={"pr-8 w-1/5"}>
             <use xlinkHref={`#${mailIcon.id}`} />
@@ -284,7 +284,7 @@ const IndexPage = () => (
         </a>
         <a
           href="#"
-          className="flex items-center bg-bl text-white font-display font-bold text-md px-8 py-6 rounded-md"
+          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={helpIcon.viewBox} className={"pr-8 w-1/5"}>
             <use xlinkHref={`#${helpIcon.id}`} />
@@ -293,7 +293,7 @@ const IndexPage = () => (
         </a>
         <a
           href="#"
-          className="flex items-center bg-bl text-white font-display font-bold text-md px-8 py-6 rounded-md"
+          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={phoneIcon.viewBox} className={"pr-8 w-1/5"}>
             <use xlinkHref={`#${phoneIcon.id}`} />
