@@ -109,13 +109,13 @@ const MobileNavigation = () => {
                           item.isOpen ? "" : "hidden",
                         ].join(" ")}
                       >
-                        {item.items.map(i => (
-                          <li>
+                        {item.items.map((item, index) => (
+                          <li key={index}>
                             <a
                               href="#"
                               className="text-base leading-10 px-4 block"
                             >
-                              {i.label}
+                              {item.label}
                             </a>
                           </li>
                         ))}
