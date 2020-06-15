@@ -51,7 +51,7 @@ const IndexPage = () => (
           heading={`Grants and programs`}
           body={`Learn more about grant opportunities, applications, and details about
           grants awarded.`}
-          link={`/grants`}
+          link={`#`}
           cta={`Explore`}
           className={""}
         />
@@ -59,7 +59,7 @@ const IndexPage = () => (
           image={`laws_and_guidance.jpg`}
           heading={`Laws and guidance`}
           body={`Find federal education legislation, regulations, guidance, and other policy documents.`}
-          link={`/grants`}
+          link={`#`}
           cta={`Explore`}
           className={""}
         />
