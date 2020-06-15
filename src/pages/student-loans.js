@@ -201,7 +201,7 @@ const StudentLoans = () => {
                 Manage your student loans
               </h2>
               <div className={"grid gap-8 mt-10 md:mt-0 order-1 xl:order-none"}>
-                <div className={"md:grid md:grid-cols-2 md:gap-8"}>
+                <div className={"grid md:grid-cols-2 gap-8"}>
                   <div>
                     <h3 className={"text-h3 font-bold mb-2"}>
                       Directory of loan servicers

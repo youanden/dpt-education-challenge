@@ -31,9 +31,9 @@ const container = {
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <section className="main-categories">
+    <section className="main-categories container md:max-w-7xl lg:max-w-max-content">
       <motion.div
-        className="grid grid-cols-2 lg:grid-cols-4 container mx-auto gap-1"
+        className="grid grid-cols-2 lg:grid-cols-4 gap-1"
         variants={container}
         animate={"show"}
         initial={"hidden"}
@@ -85,7 +85,7 @@ const IndexPage = () => (
         access.
       </p>
     </div>
-    <section className="container xl:px-0 max-w-7xl about-highlights grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
+    <section className="container md:px-3 xl:px-0 max-w-7xl about-highlights grid grid-cols-1 md:grid-cols-3 gap-3 mb-8">
       <ATallContent
         image={`about_ed_gov.jpg`}
         heading={`About Department of Education`}
@@ -115,7 +115,7 @@ const IndexPage = () => (
         className={"mx-3 md:m-0 bg-bl overflow-hidden rounded-md"}
         innerClassName={"md:h-banner p-4 py-8"}
       >
-        <div className="h-full px-4 flex flex-col justify-between">
+        <div className="h-full px-4 md:p-0 flex flex-col justify-between">
           <header>
             <svg
               viewBox={twitterIcon.viewBox}
@@ -127,7 +127,7 @@ const IndexPage = () => (
           </header>
           <p
             className={
-              "font-display text-base md:text-md leading-10 tracking-wide p-2"
+              "font-display text-base md:text-base lg:text-md leading-10 tracking-wide p-2"
             }
           >
             While these are challenging times, we must take this opportunity,
@@ -272,30 +272,30 @@ const IndexPage = () => (
     </section>
     <div className="flex flex-col container items-start">
       <PageDivider />
-      <section className="p-3 md:p-0 container md:grid grid-cols-3 gap-3 max-w-7xl my-8">
+      <section className="p-3 md:p-0 container lg:grid grid-cols-3 gap-3 max-w-7xl my-8">
         <a
           href="#"
-          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
+          className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
-          <svg viewBox={mailIcon.viewBox} className={"pr-8 w-1/5"}>
+          <svg viewBox={mailIcon.viewBox} className={"pr-8 w-16"}>
             <use xlinkHref={`#${mailIcon.id}`} />
           </svg>
           <span className="w-4/5">Subscribe to our email updates</span>
         </a>
         <a
           href="#"
-          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
+          className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
-          <svg viewBox={helpIcon.viewBox} className={"pr-8 w-1/5"}>
+          <svg viewBox={helpIcon.viewBox} className={"pr-8 w-16"}>
             <use xlinkHref={`#${helpIcon.id}`} />
           </svg>
           <span className="w-4/5">Frequently asked questions</span>
         </a>
         <a
           href="#"
-          className="mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
+          className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
-          <svg viewBox={phoneIcon.viewBox} className={"pr-8 w-1/5"}>
+          <svg viewBox={phoneIcon.viewBox} className={"pr-8 w-16"}>
             <use xlinkHref={`#${phoneIcon.id}`} />
           </svg>
           <span className="w-4/5">Contact Department of Education</span>
