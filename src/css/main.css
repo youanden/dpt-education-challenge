@@ -1,2 +1,9 @@
 @import "base.css";
 @import "buttons.css";
+
+.text-link:hover {
+    @apply text-green;
+}
+/*.text-link:visited {*/
+/*    @apply text-red;*/
+/*}*/
