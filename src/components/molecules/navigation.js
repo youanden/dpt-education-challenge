@@ -17,7 +17,10 @@ import "../../css/navigation.css"
 const Navigation = () => {
   const [nav, setNav] = useState(menu)
   return (
-    <nav className="hidden md:flex bg-white font-body border-t-1 border-b-1 border-gr">
+    <nav
+      id="main-navigation"
+      className="hidden md:flex bg-white font-body border-t-1 border-b-1 border-gr"
+    >
       <div className="container mx-auto relative z-10">
         <div className="flex justify-between h-16 relative">
           <div className="flex">
