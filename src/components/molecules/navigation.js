@@ -1,15 +1,8 @@
 import React, { useState } from "react"
-import Transition from "../transition"
 import ReactMegaMenu from "../mega-menu"
 import classNames from "classnames"
 
-import {
-  studentMenu,
-  teacherMenu,
-  collegeMenu,
-  resourcesMenu,
-  menu,
-} from "../menu-data"
+import { menu } from "../menu-data"
 
 import "../../css/navigation.css"
 

@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import classNames from "classnames"
-import Img from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -145,7 +144,7 @@ const StudentLoans = () => {
                 Share:
               </small>
               <div className="inline-flex text-bl">
-                <a href="#" className="hover:text-gr-dark">
+                <a href="/" className="hover:text-gr-dark">
                   <span className="sr-only">Facebook</span>
                   <svg
                     className="h-5 w-6"
@@ -159,7 +158,7 @@ const StudentLoans = () => {
                     />
                   </svg>
                 </a>
-                <a href="#" className="ml-3 hover:text-gr-dark">
+                <a href="/" className="ml-3 hover:text-gr-dark">
                   <span className="sr-only">Instagram</span>
                   <svg
                     className="h-5 w-6"
@@ -173,7 +172,7 @@ const StudentLoans = () => {
                     />
                   </svg>
                 </a>
-                <a href="#" className="ml-3 hover:text-gr-dark">
+                <a href="/" className="ml-3 hover:text-gr-dark">
                   <span className="sr-only">Twitter</span>
                   <svg
                     className="h-5 w-6"
@@ -185,13 +184,13 @@ const StudentLoans = () => {
                 </a>
               </div>
               <div className="mt-16">
-                <a href="#" className={"text-bl text-link underline block"}>
+                <a href="/" className={"text-bl text-link underline block"}>
                   Eligibility requirements
                 </a>
-                <a href="#" className={"text-bl text-link underline block"}>
+                <a href="/" className={"text-bl text-link underline block"}>
                   Funding your education
                 </a>
-                <a href="#" className={"text-bl text-link underline block"}>
+                <a href="/" className={"text-bl text-link underline block"}>
                   Estimates of aid
                 </a>
               </div>
@@ -212,7 +211,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -226,7 +225,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -240,7 +239,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -254,7 +253,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -268,7 +267,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -282,7 +281,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -296,7 +295,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -305,10 +304,10 @@ const StudentLoans = () => {
                       Student loan forgiveness
                     </h3>
                     <p className={"text-gr-light text-16 leading-6"}>
-                      <a className="underline block text-link" href="#">
+                      <a className="underline block text-link" href="/">
                         Public Service Loan Forgiveness (PSLF)
                       </a>
-                      <a className="underline block text-link" href="#">
+                      <a className="underline block text-link" href="/">
                         Teacher Loan Forgiveness Program
                       </a>
                     </p>
@@ -321,7 +320,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -333,7 +332,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -347,7 +346,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -361,7 +360,7 @@ const StudentLoans = () => {
                       hic illo ipsum laudantium neque nesciunt, nihil nulla
                       perspiciatis quidem quod quos ratione sunt!
                     </p>
-                    <a href="#" className={"text-bl text-link underline"}>
+                    <a href="/" className={"text-bl text-link underline"}>
                       Learn more
                     </a>
                   </div>
@@ -392,7 +391,7 @@ const StudentLoans = () => {
                 aria-current="page"
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -406,7 +405,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -420,7 +419,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -434,7 +433,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -448,7 +447,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -462,7 +461,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -476,7 +475,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -490,7 +489,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -504,7 +503,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -518,7 +517,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -532,7 +531,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -546,7 +545,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -560,7 +559,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -574,7 +573,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }
@@ -588,7 +587,7 @@ const StudentLoans = () => {
                 }
               >
                 <a
-                  href={"#"}
+                  href={"/"}
                   className={
                     "truncate text-bl text-link block hover:font-bold "
                   }

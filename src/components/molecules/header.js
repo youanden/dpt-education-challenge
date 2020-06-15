@@ -4,7 +4,6 @@ import React, { useState } from "react"
 import Navigation from "./navigation"
 import Search from "./search"
 import { useStaticImage } from "../../hooks/use-static-image"
-import Img from "gatsby-image"
 import Transition from "../transition"
 import building from "../../images/building.svg"
 import lock from "../../images/lock.svg"
@@ -96,7 +95,7 @@ const Header = ({ siteTitle }) => {
           </div>
           <div className="flex-1 text-right relative py-2 ">
             <div className="hidden md:flex justify-end items-center">
-              <a href="#">Sitemap (A-Z)</a>
+              <a href="/">Sitemap (A-Z)</a>
               <button
                 id="language-menu"
                 aria-haspopup="true"
@@ -139,21 +138,21 @@ const Header = ({ siteTitle }) => {
                     aria-labelledby="language-menu"
                   >
                     <a
-                      href="#"
+                      href="/"
                       className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
                       role="menuitem"
                     >
                       English
                     </a>
                     <a
-                      href="#"
+                      href="/"
                       className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
                       role="menuitem"
                     >
                       Spanish
                     </a>
                     <a
-                      href="#"
+                      href="/"
                       className="block px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900"
                       role="menuitem"
                     >
@@ -173,7 +172,7 @@ const Header = ({ siteTitle }) => {
           <div className="container py-8 font-display font-bold text-md">
             <ul className={"flex"}>
               <li className={"mr-12"}>
-                <a href="#" className={"text-white"}>
+                <a href="/" className={"text-white"}>
                   <img
                     className={"inline mr-2"}
                     src={siteNcesKids.src}
@@ -183,7 +182,7 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="#" className={"text-white"}>
+                <a href="/" className={"text-white"}>
                   <img
                     className={"inline mr-2"}
                     src={siteEric.src}
@@ -193,7 +192,7 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="#" className={"text-white"}>
+                <a href="/" className={"text-white"}>
                   <img
                     className={"inline mr-2"}
                     src={siteSchoolSafety.src}
@@ -203,7 +202,7 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="#" className={"text-white"}>
+                <a href="/" className={"text-white"}>
                   <img
                     className={"inline mr-2"}
                     src={siteDapip.src}

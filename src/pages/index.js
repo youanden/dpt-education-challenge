@@ -51,7 +51,7 @@ const IndexPage = () => (
           heading={`Grants and programs`}
           body={`Learn more about grant opportunities, applications, and details about
           grants awarded.`}
-          link={`#`}
+          link={`/`}
           cta={`Explore`}
           className={""}
         />
@@ -59,7 +59,7 @@ const IndexPage = () => (
           image={`laws_and_guidance.jpg`}
           heading={`Laws and guidance`}
           body={`Find federal education legislation, regulations, guidance, and other policy documents.`}
-          link={`#`}
+          link={`/`}
           cta={`Explore`}
           className={""}
         />
@@ -67,7 +67,7 @@ const IndexPage = () => (
           image={`data_and_research.jpg`}
           heading={`Data and research`}
           body={`Explore and download data and learn about education-related data and research.`}
-          link={`#`}
+          link={`/`}
           cta={`Explore`}
           className={""}
         />
@@ -158,7 +158,7 @@ const IndexPage = () => (
       <section className="mb-16">
         <div className="container mx-auto">
           <div className="-my-8 divide-y-1 divide-gr">
-            <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
+            <a href={"/"} className="py-8 flex flex-wrap md:flex-no-wrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span className="mt-1 text-gray-500 text-sm">Apr 24, 2020</span>
               </div>
@@ -169,7 +169,7 @@ const IndexPage = () => (
                 </h2>
               </div>
             </a>
-            <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
+            <a href={"/"} className="py-8 flex flex-wrap md:flex-no-wrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span className="mt-1 text-gray-500 text-sm">Apr 24, 2020</span>
               </div>
@@ -181,7 +181,7 @@ const IndexPage = () => (
                 </h2>
               </div>
             </a>
-            <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
+            <a href={"/"} className="py-8 flex flex-wrap md:flex-no-wrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span className="mt-1 text-gray-500 text-sm">Apr 23, 2020</span>
               </div>
@@ -193,7 +193,7 @@ const IndexPage = () => (
                 </h2>
               </div>
             </a>
-            <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
+            <a href={"/"} className="py-8 flex flex-wrap md:flex-no-wrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span className="mt-1 text-gray-500 text-sm">Apr 23, 2020</span>
               </div>
@@ -204,7 +204,7 @@ const IndexPage = () => (
                 </h2>
               </div>
             </a>
-            <a href={"#"} className="py-8 flex flex-wrap md:flex-no-wrap">
+            <a href={"/"} className="py-8 flex flex-wrap md:flex-no-wrap">
               <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                 <span className="mt-1 text-gray-500 text-sm">Apr 22, 2020</span>
               </div>
@@ -216,7 +216,7 @@ const IndexPage = () => (
                 </h2>
               </div>
             </a>
-            <a href="#" className="btn-blue font-medium">
+            <a href="/" className="btn-blue font-medium">
               Read more
             </a>
           </div>
@@ -230,7 +230,7 @@ const IndexPage = () => (
           alt={"Image of Coronavirus"}
           heading={`Coronavirus Information`}
           layout={"square"}
-          link={`#`}
+          link={`/`}
           cta={`Learn more`}
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
@@ -245,7 +245,7 @@ const IndexPage = () => (
           }
           heading={`Education Freedom Scholarships`}
           layout={"square"}
-          link={`#`}
+          link={`/`}
           cta={`Learn more`}
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
@@ -260,7 +260,7 @@ const IndexPage = () => (
           }
           heading={`Find Resources to Create a Safer School`}
           layout={"square"}
-          link={`#`}
+          link={`/`}
           cta={`Learn more`}
           innerClassName={``}
           imageWrapperClassName={`h-mbanner rounded-md`}
@@ -274,7 +274,7 @@ const IndexPage = () => (
       <PageDivider />
       <section className="p-3 md:p-0 container lg:grid grid-cols-3 gap-3 max-w-7xl my-8">
         <a
-          href="#"
+          href="/"
           className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={mailIcon.viewBox} className={"pr-8 w-16"}>
@@ -283,7 +283,7 @@ const IndexPage = () => (
           <span className="w-4/5">Subscribe to our email updates</span>
         </a>
         <a
-          href="#"
+          href="/"
           className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={helpIcon.viewBox} className={"pr-8 w-16"}>
@@ -292,7 +292,7 @@ const IndexPage = () => (
           <span className="w-4/5">Frequently asked questions</span>
         </a>
         <a
-          href="#"
+          href="/"
           className="h-26 mb-3 flex items-center bg-bl text-white font-display font-bold text-md px-4 md:px-8 py-2 md:py-6 rounded-md"
         >
           <svg viewBox={phoneIcon.viewBox} className={"pr-8 w-16"}>

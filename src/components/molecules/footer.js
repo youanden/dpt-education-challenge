@@ -1,9 +1,6 @@
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React, { useState } from "react"
-import Navigation from "./navigation"
 import { useStaticImage } from "../../hooks/use-static-image"
-import Img from "gatsby-image"
 
 const Footer = () => {
   const images = useStaticImage()
@@ -45,47 +42,47 @@ const Footer = () => {
           ].join(" ")}
         >
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               About Us
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Contact us
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               ED Offices
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Jobs
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               FAQ
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Budget and performance
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Privacy program
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Newsletter sign up
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Press releases
             </a>
           </li>
@@ -119,22 +116,22 @@ const Footer = () => {
           ].join(" ")}
         >
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Repaying loans
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Defaulted loans
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Loan forgiveness
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Loan servicers
             </a>
           </li>
@@ -168,22 +165,22 @@ const Footer = () => {
           ].join(" ")}
         >
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Repaying loans
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Defaulted loans
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Loan forgiveness
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Loan servicers
             </a>
           </li>
@@ -217,22 +214,22 @@ const Footer = () => {
           ].join(" ")}
         >
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Every Student Succeeds Act
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               FERPA
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               Civil rights
             </a>
           </li>
           <li>
-            <a href="#" className="text-base leading-10 px-4 block">
+            <a href="/" className="text-base leading-10 px-4 block">
               IDEA website
             </a>
           </li>
@@ -241,47 +238,47 @@ const Footer = () => {
       <nav className="hidden sm:block border-b-1 border-t-1 border-bl-highlight">
         <ul className="container text-white font-display font-bold py-4 flex flex-wrap max-w-max-content justify-center px-4 sm:px-6 lg:px-8 ">
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               About us
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Contact us
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Offices
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Jobs
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               FAQ
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Budget and Performance
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Privacy program
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Newsletter sign up
             </a>
           </li>
           <li className="p-2">
-            <a href="#" className="text-base leading-6">
+            <a href="/" className="text-base leading-6">
               Press releases
             </a>
           </li>
@@ -298,7 +295,7 @@ const Footer = () => {
                 <ul className="mt-4">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Repaying Loans
@@ -306,7 +303,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Defaulted loans
@@ -314,7 +311,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Loan forgiveness
@@ -322,7 +319,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Loan services
@@ -337,7 +334,7 @@ const Footer = () => {
                 <ul className="mt-4">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Apply for Pell Grants
@@ -345,7 +342,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Grants forecast
@@ -353,7 +350,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Apply for a grant
@@ -361,7 +358,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Eligibility for grants
@@ -378,7 +375,7 @@ const Footer = () => {
                 <ul className="mt-4">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Every Student Succeeds Act
@@ -386,7 +383,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       FERPA
@@ -394,7 +391,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Civil Rights
@@ -402,7 +399,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       IDEA website
@@ -417,7 +414,7 @@ const Footer = () => {
                 <ul className="mt-4">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Education statistics
@@ -425,7 +422,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Postsecondary education data
@@ -433,7 +430,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       ED Data Express
@@ -441,7 +438,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       Nation's report card
@@ -449,7 +446,7 @@ const Footer = () => {
                   </li>
                   <li className="mt-4">
                     <a
-                      href="#"
+                      href="/"
                       className="text-base leading-6 text-gray-300 hover:text-white"
                     >
                       What Works Clearinghouse
@@ -462,7 +459,7 @@ const Footer = () => {
         </div>
         <div className="mt-0 md:mt-8 pt-8 flex flex-wrap items-center justify-between">
           <div className="text-white py-4 flex order-2">
-            <a href="#" className="hover:text-gray-300">
+            <a href="/" className="hover:text-gray-300">
               <span className="sr-only">Facebook</span>
               <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -472,7 +469,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="ml-6 hover:text-gray-300">
+            <a href="/" className="ml-6 hover:text-gray-300">
               <span className="sr-only">Instagram</span>
               <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                 <path
@@ -482,7 +479,7 @@ const Footer = () => {
                 />
               </svg>
             </a>
-            <a href="#" className="ml-6 hover:text-gray-300">
+            <a href="/" className="ml-6 hover:text-gray-300">
               <span className="sr-only">Twitter</span>
               <svg className="h-8 w-8" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
@@ -500,47 +497,47 @@ const Footer = () => {
       <nav className="container">
         <div className="text-white font-body text-sm py-4 flex flex-wrap sm:px-6 lg:px-8 lg:-mx-4 divide-x-1 divide-x-reverse divide-gray-700 self-start">
           <div className="mb-4 py-1 px-4 md:pr-4 border-r-1 border-gray-700">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               About us
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Contact us
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Offices
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Jobs
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               FAQ
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Budget and Performance
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Privacy program
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Newsletter sign up
             </a>
           </div>
           <div className="mb-4 py-1 px-4" style={{ borderRight: 0 }}>
-            <a href="#" className="leading-6">
+            <a href="/" className="leading-6">
               Press releases
             </a>
           </div>

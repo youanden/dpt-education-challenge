@@ -112,7 +112,7 @@ const MobileNavigation = () => {
                         {item.items.map((item, index) => (
                           <li key={index}>
                             <a
-                              href="#"
+                              href="/"
                               className="text-base leading-10 px-4 block"
                             >
                               {item.label}
@@ -155,7 +155,7 @@ const MobileNavigation = () => {
                 {isMultisiteOpen ? (
                   <ul className={"flex flex-col p-4"}>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <img
                           className={"inline mr-2"}
                           src={siteNcesKids.src}
@@ -165,7 +165,7 @@ const MobileNavigation = () => {
                       </a>
                     </li>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <img
                           className={"inline mr-2"}
                           src={siteEric.src}
@@ -175,7 +175,7 @@ const MobileNavigation = () => {
                       </a>
                     </li>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <img
                           className={"inline mr-2"}
                           src={siteSchoolSafety.src}
@@ -185,7 +185,7 @@ const MobileNavigation = () => {
                       </a>
                     </li>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <img
                           className={"inline mr-2"}
                           src={siteDapip.src}
@@ -226,17 +226,17 @@ const MobileNavigation = () => {
                 {isLangOpen ? (
                   <ul className={"flex flex-col p-4"}>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <span>English</span>
                       </a>
                     </li>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <span>Spanish</span>
                       </a>
                     </li>
                     <li className={"mb-4"}>
-                      <a href="#" className={""}>
+                      <a href="/" className={""}>
                         <span>French</span>
                       </a>
                     </li>

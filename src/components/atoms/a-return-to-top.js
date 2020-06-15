@@ -5,7 +5,7 @@ const ReturnToTop = props => {
   return (
     <div className={"p-3 md:p-0 container " + props.additionalClassName}>
       <a
-        href={"#"}
+        href={"/"}
         className={"inline-block text-link py-6 underline"}
         onClick={e => {
           e.preventDefault()
