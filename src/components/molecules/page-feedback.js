@@ -9,7 +9,10 @@ const PageFeedback = () => {
     currentSection === "not-helpful" ? "bg-red text-white" : "",
     currentSection === "thanks" ? "bg-green text-white" : ""
   )
-  console.log(currentSection)
+  const handleSubmit = e => {
+    e.preventDefault()
+    setCurrentSection("thanks")
+  }
   return (
     <div className={wrapperClasses}>
       <div className="container h-18 items-center flex">
@@ -85,7 +88,7 @@ const PageFeedback = () => {
               ornare enim, molestie vulputate lorem libero sed lacus. Aliquam
               maximus nunc arcu.
             </p>
-            <form action="">
+            <form action="" onSubmit={handleSubmit}>
               <div className={"mt-4"}>
                 <label
                   htmlFor="what_were_you_doing"
@@ -96,7 +99,9 @@ const PageFeedback = () => {
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     id="what_were_you_doing"
+                    type={"text"}
                     className="border-bl p-2 rounded block w-full transition ease-in-out duration-150"
+                    required
                   />
                 </div>
               </div>
@@ -110,12 +115,14 @@ const PageFeedback = () => {
                 <div className="mt-1 relative rounded-md shadow-sm">
                   <input
                     id="what_went_wrong"
+                    type={"text"}
                     className="border-bl p-2 rounded block w-full transition ease-in-out duration-150"
+                    required
                   />
                 </div>
               </div>
+              <button className="btn-blue mt-6">Send</button>
             </form>
-            <button className="btn-blue mt-6">Send</button>
           </div>
         </section>
       </div>
