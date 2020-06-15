@@ -4,6 +4,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../css/loans.css"
+import PageFeedback from "../components/molecules/page-feedback"
+import ReturnToTop from "../components/atoms/a-return-to-top"
 
 const StudentLoans = () => {
   const [isMobileOpen, setMobileOpen] = useState(false)
@@ -484,6 +486,7 @@ const StudentLoans = () => {
             </nav>
           </div>
         </div>
+        <ReturnToTop />
       </div>
     </Layout>
   )
