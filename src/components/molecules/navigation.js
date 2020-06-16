@@ -24,7 +24,7 @@ const Navigation = () => {
       id="main-navigation"
       className="hidden md:flex bg-white font-body border-t-1 border-b-1 border-gr"
     >
-      <div className="container mx-auto relative z-10">
+      <div className="container mx-auto relative z-20">
         <div className="flex justify-between h-16 relative">
           <div className="flex">
             <div className="hidden sm:flex">
@@ -97,7 +97,8 @@ const Navigation = () => {
                                 role: "tablist",
                               },
                               menuItemProps: {
-                                className: "p-4 cursor-default relative group",
+                                className:
+                                  "p-4 pr-8 cursor-default relative group",
                                 "aria-selected": false,
                                 role: "tab",
                                 "aria-controls": `megamenu-content-`,
@@ -105,7 +106,7 @@ const Navigation = () => {
                               },
                               menuItemAfter: (
                                 <svg
-                                  className="flex-shrink-0 m-1 w-5 h-5 text-gray-300 group-hover:text-white align-middle float-right"
+                                  className="h-full mr-2 pr-2 w-7 text-gray-300 group-hover:text-white absolute inset-y-0 right-0"
                                   viewBox="0 0 20 20"
                                   fill="currentColor"
                                 >
