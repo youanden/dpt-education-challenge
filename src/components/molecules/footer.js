@@ -498,47 +498,57 @@ const Footer = () => {
         <div className="text-white font-body text-sm py-4 flex flex-wrap sm:px-6 lg:px-8 lg:-mx-4 divide-x-1 divide-x-reverse divide-gray-700 self-start">
           <div className="mb-4 py-1 px-4 md:pr-4 border-r-1 border-gray-700">
             <a href="/" className="leading-6">
-              About us
+              Accessibility
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              Contact us
+              Policies
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              Offices
+              Notices
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              Jobs
+              Security
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              FAQ
+              FOIA
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              Budget and Performance
+              Information quality
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
             <a href="/" className="leading-6">
-              Privacy program
+              Inspector general
             </a>
           </div>
           <div className="mb-4 py-1 px-4">
-            <a href="/" className="leading-6">
-              Newsletter sign up
+            <a
+              href="https://www.whitehouse.gov"
+              rel={"noreferrer noopener"}
+              target={"_blank"}
+              className="leading-6"
+            >
+              Whitehouse.gov
             </a>
           </div>
           <div className="mb-4 py-1 px-4" style={{ borderRight: 0 }}>
-            <a href="/" className="leading-6">
-              Press releases
+            <a
+              href="https://www.usa.gov"
+              rel={"noreferrer noopener"}
+              target={"_blank"}
+              className="leading-6"
+            >
+              USA.gov
             </a>
           </div>
         </div>

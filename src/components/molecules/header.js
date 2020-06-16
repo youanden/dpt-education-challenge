@@ -172,7 +172,12 @@ const Header = ({ siteTitle }) => {
           <div className="container py-8 font-display font-bold text-md">
             <ul className={"flex"}>
               <li className={"mr-12"}>
-                <a href="/" className={"text-white"}>
+                <a
+                  href="https://nces.ed.gov/nceskids/"
+                  rel={"noreferrer noopener"}
+                  target={"_blank"}
+                  className={"text-white"}
+                >
                   <img
                     className={"inline mr-2"}
                     src={siteNcesKids.src}
@@ -182,7 +187,12 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="/" className={"text-white"}>
+                <a
+                  href="https://eric.ed.gov/"
+                  rel={"noreferrer noopener"}
+                  target={"_blank"}
+                  className={"text-white"}
+                >
                   <img
                     className={"inline mr-2"}
                     src={siteEric.src}
@@ -192,7 +202,12 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="/" className={"text-white"}>
+                <a
+                  href="https://www.schoolsafety.gov/"
+                  rel={"noreferrer noopener"}
+                  target={"_blank"}
+                  className={"text-white"}
+                >
                   <img
                     className={"inline mr-2"}
                     src={siteSchoolSafety.src}
@@ -202,7 +217,12 @@ const Header = ({ siteTitle }) => {
                 </a>
               </li>
               <li className={"mr-12"}>
-                <a href="/" className={"text-white"}>
+                <a
+                  href="https://ope.ed.gov/dapip/"
+                  rel={"noreferrer noopener"}
+                  target={"_blank"}
+                  className={"text-white"}
+                >
                   <img
                     className={"inline mr-2"}
                     src={siteDapip.src}
